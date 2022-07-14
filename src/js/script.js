@@ -5,15 +5,14 @@
 
 (function ($, Drupal) {
   Drupal.behaviors.cellular = {
-    attach: function (context, settings) {
-
+    attach(context, settings) {
       /* Init cellular functions */
-      $('a[href^=tel]').each(function () {
-        var num = $(this).attr('href').match(/\d+/g);
-        $(this).attr('href', 'tel:' + num.join(''));
+      $("a[href^=tel]").each(function () {
+        const num = $(this).attr("href").match(/\d+/g);
+        $(this).attr("href", `tel:${num.join("")}`);
       });
 
       /* End cellular functions */
-    }
+    },
   };
 })(jQuery, Drupal);

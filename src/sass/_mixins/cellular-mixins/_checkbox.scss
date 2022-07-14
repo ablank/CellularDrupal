@@ -28,8 +28,8 @@
 
       &:before {
         border: $default-border;
-        background: darken($color-primary-bg, 2%);
-        box-shadow: inset 0 0 1px 1px $color-secondary;
+        background: darken($color-1-bg, 2%);
+        box-shadow: inset 0 0 1px 1px $color-2;
       }
       &:after {
         background-image: url("../assets/icons/png/#{$img}.png");
@@ -48,10 +48,10 @@
     }
     &:disabled {
       + label {
-        color: $color-secondary;
+        color: $color-2;
         &:before {
-          color: $color-secondary;
-          background: $color-secondary;
+          color: $color-2;
+          background: $color-2;
         }
       }
     }

@@ -1,6 +1,6 @@
 /**
   * @file
-  * Drupal pager styling
+  * Pager styling
 */
 .pager {
   display: table;
@@ -19,12 +19,12 @@
   }
 
   a {
-    @include button();
+    @include button($color-2-bg, $color-2-bg);
 
     &:hover,
     &:focus {
-      color: $color-primary-bg;
-      background: $color-primary;
+      color: $color-1-bg;
+      background: $color-1;
     }
   }
 
@@ -36,10 +36,10 @@
     margin: -0.5em 0.6em 0;
     padding: $default-size;
     cursor: default;
-    color: $color-secondary;
+    color: $color-2;
     border: $default-border;
     outline: 0;
-    background: $color-primary-bg;
+    background: $color-1-bg;
     font-weight: bold;
   }
 }

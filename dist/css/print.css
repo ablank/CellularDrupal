@@ -1,14 +1,16 @@
 /**
   * @file
-  * Styling for printed pages
+  * Printed page styling
 */
-/*
-* Cellular :: SASS Configuration Variables
-*/
-/*
- * Use/import sass modules.
-*/
+/* /// */
+/* Cellular :: SASS Configuration Variables */
+/*  */
 /* Imports variables as defined in style-dictionary and mixins/libraries (i.e. bourbon, compass, etc.) */
+/* //// */
+/**
+* @file
+* Mixins index.
+*/
 /**
   * @file
   // Cellular SASS mixins
@@ -32,6 +34,11 @@
   //
   /////
 */
+/* -------------------------------------------- */
+/* --------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* --------------------------------------------------------- */
 /**
   * @file
   * CSS loading indicators.
@@ -39,80 +46,67 @@
   * http://projects.lukehaas.me/css-loaders/
   * https://github.com/jh3y/whirl/
 */
-/**
-  * @file
-   CSS loading indicators.
-
-   Inspired by:
-    * http://codepen.io/TaniaLD/pen/oKxep
-    * http://projects.lukehaas.me/css-loaders/
-    * https://github.com/jh3y/whirl/
-*/
 /* @import 'animations' */
+/**
+* @file
+* Variables index.
+*/
 /*
   DO NOT EDIT DIRECTLY
-  @see src/style-dictionary/tokens/
-  Generated on Thu, 05 Aug 2021 00:47:48 GMT
+  @see src/style-dictionary/variables/
+  Generated on Thu, 14 Jul 2022 02:52:25 GMT
 */
 /**
 * @file
 * Add derivative variables using sass functions based on style-dictionary.
 */
-/* Define background-colors derivative from primary colors. */
+/* Variable aliases */
+/* Define background-color based on primary color. */
 /* Cell grid spacing- % will be appended */
 /* cells & offsets populated by looping through grid values. */
 /* Generate list of grid class names based on % size */
 /* Header region */
 @media print {
   img,
-  p {
+p {
     page-break-inside: avoid;
   }
-
   p,
-  h2,
-  h3 {
+h2,
+h3 {
     orphans: 3;
     widows: 3;
   }
-
   h2,
-  h3 {
+h3 {
     page-break-after: avoid;
   }
-
   a,
-  a:visited {
+a:visited {
     text-decoration: underline;
     color: #29b4de;
   }
   a:after,
-  a:visited:after {
+a:visited:after {
     content: " (" attr(href) ")";
   }
-
   code a:after {
     content: none;
   }
-
   pre,
-  code,
-  blockquote {
+code,
+blockquote {
     border: 1px solid #fefefe;
     page-break-inside: avoid;
   }
-
   #app,
-  #content-wrap,
-  #content-main {
+#content-wrap,
+#content-main {
     width: 100%;
   }
-
-  header,
   #header,
-  footer,
-  #footer,
-  .hidden {
+#footer,
+.hidden {
     display: none;
     visibility: hidden;
   }

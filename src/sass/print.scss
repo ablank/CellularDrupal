@@ -1,6 +1,6 @@
 /**
   * @file
-  * Styling for printed pages
+  * Printed page styling
 */
 
 @import "variables";
@@ -39,7 +39,7 @@
   pre,
   code,
   blockquote {
-    border: 1px solid $color-secondary;
+    border: 1px solid $color-2;
     page-break-inside: avoid;
   }
 
@@ -49,9 +49,7 @@
     width: 100%;
   }
 
-  header,
   #header,
-  footer,
   #footer,
   .hidden {
     display: none;

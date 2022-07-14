@@ -1,2 +1,0 @@
-build process to autocreate __index.scss for all subdirectories of theme
-

@@ -3,7 +3,7 @@
 }
 .date-nav-wrapper {
   padding: 0.6em 0;
-  background: darken($c2, 5%);
+  background: darken($color-2, 5%);
 
   .date-nav {
     padding: 0.4em 0;
@@ -42,7 +42,7 @@
   }
   td {
     padding: 0.2em;
-    background-color: $color-primary-bg;
+    background-color: $color-1-bg;
 
     &.date-box {
       margin: 0;
@@ -52,16 +52,16 @@
 }
 .date-box {
   .month.day {
-    @include round($nano, "top");
+    @include round($size-nano, "top");
 
     padding: 0 0.5em;
-    color: $color-primary-bg;
+    color: $color-1-bg;
     background-color: $color-neutral;
   }
 
   a,
   a:visited {
-    color: $color-primary-bg;
+    color: $color-1-bg;
   }
 
   a {
@@ -76,7 +76,7 @@
 
 .single-day {
   td {
-    @include round($nano, "bottom");
+    @include round($size-nano, "bottom");
 
     width: 14%; /* ~ 100% / 7 days */
     vertical-align: top;
@@ -85,7 +85,7 @@
     border-left: $color-neutral 1px solid;
 
     /* min-width: 5em; */
-    background-color: $color-primary-bg;
+    background-color: $color-1-bg;
 
     &.today {
       @include box-shadow($color-hilight);
@@ -94,7 +94,7 @@
     }
 
     &.past {
-      background-color: darken($color-primary-bg, 10%);
+      background-color: darken($color-1-bg, 10%);
 
       a {
         &,
@@ -109,10 +109,10 @@
     &,
     &:visited {
       display: block;
-      padding: $nano;
+      padding: $size-nano;
       border: $color-neutral 1px solid;
-      border-radius: $nano;
-      background: darken($color-primary-bg, 5%);
+      border-radius: $size-nano;
+      background: darken($color-1-bg, 5%);
     }
 
     &:active,
@@ -120,7 +120,7 @@
     &:focus,
     &:visited {
       border-color: $color-hilight;
-      background: $color-primary-bg;
+      background: $color-1-bg;
     }
   }
 
