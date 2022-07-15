@@ -4,22 +4,21 @@
 */
 a {
   /* display: inline-block; */
-  @include transition();
-
   text-decoration: none;
-  color: $ch1;
+  color: $color-hilight;
   outline: none;
   background-repeat: no-repeat;
+  @include transition();
 
-  &:visited {
-    color: $ch3;
-  }
 
   &:hover,
   &:active,
   &:focus {
-    text-decoration: underline;
-    color: $ch2;
+    text-decoration: none;
+    color: $color-hilight-light;
     outline: none;
+  }
+  &:visited {
+    color: $color-hilight-dark;
   }
 }

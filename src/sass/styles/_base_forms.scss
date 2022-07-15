@@ -5,6 +5,35 @@
 
 $i_pad: 0.4em;
 
+
+/* Form Alert Classes */
+.ok,
+.warning,
+.error {
+  @include border-radius();
+
+  border: 0.2em solid;
+  font-weight: bold;
+}
+
+.ok {
+  color: $color-success;
+  border-color: $color-success;
+  background-color: lighten($color-success, 75%);
+}
+
+.warning {
+  color: $color-warning;
+  border-color: $color-warning;
+  background-color: lighten($color-warning, 75%);
+}
+
+.error {
+  color: $color-error;
+  border-color: $color-error;
+  background-color: lighten($color-error, 75%);
+}
+
 form {
   display: block;
   max-width: 32em;
@@ -77,15 +106,12 @@ label {
   padding: 1em $i_pad 0;
   text-align: left;
   font-family: $h-font;
-  font-weight: $h-weight;
+  font-weight: normal;
 }
 
 input,
 select,
 textarea {
-  @include border-radius();
-  @include transition();
-
   display: inline;
   display: inline-block;
   width: auto;
@@ -100,6 +126,8 @@ textarea {
   background: darken($color-1-bg, 1%);
   font: 1em/1.6em $p-font;
   font-size: 100%;
+  @include border-radius();
+  @include transition();
 
   &:focus {
     color: $p-color;
@@ -170,6 +198,11 @@ input {
     width: auto;
     border: none;
   }
+  &[type="color"]{
+    width: 1.4em;
+    height: 1.4em; 
+    background: $color-hilight;
+  }
 
   &[type="text"],
   &[type="number"],
@@ -181,7 +214,7 @@ input {
 
   &[type="checkbox"],
   &[type="radio"] {
-    @include checkbox(1.2em);
+    @include checkbox(1.4em);
   }
 
   &[type="checkbox"] {
@@ -207,9 +240,6 @@ input {
         background-position: 1px 1px;
       }
     }
-  }
-
-  &.switch {
   }
 
   &[type="range"] {
@@ -248,30 +278,3 @@ input[type="submit"] {
   margin-bottom: 1em;
 }
 
-/* Form Alert Classes */
-.ok,
-.warning,
-.error {
-  @include border-radius();
-
-  border: 0.2em solid;
-  font-weight: bold;
-}
-
-.ok {
-  color: $color-success;
-  border-color: $color-success;
-  background-color: lighten($color-success, 75%);
-}
-
-.warning {
-  color: $color-warning;
-  border-color: $color-warning;
-  background-color: lighten($color-warning, 75%);
-}
-
-.error {
-  color: $color-error;
-  border-color: $color-error;
-  background-color: lighten($color-error, 75%);
-}

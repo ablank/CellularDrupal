@@ -6,24 +6,22 @@
 /* Variable aliases */
 $color-1: $color-primary;
 $color-1-bg: $color-primary-bg;
-$color-1-l: lighten($color-1, 10%);
-$color-1-d: darken($color-1, 10%);
+$color-1-light: lighten($color-1, 10%);
+$color-1-dark: darken($color-1, 10%);
 
 $color-2: $color-secondary;
 $color-2-bg: $color-secondary-bg;
-$color-2-l: lighten($color-1, 10%);
-$color-2-d: darken($color-1, 10%);
+$color-2-light: lighten($color-1, 10%);
+$color-2-dark: darken($color-1, 10%);
 
 $color-3: $color-tertiary;
 $color-3-bg: $color-tertiary-bg;
-$color-3-l: lighten($color-1, 10%);
-$color-3-d: darken($color-1, 10%);
+$color-3-light: lighten($color-1, 10%);
+$color-3-dark: darken($color-1, 10%);
 
-$ch1: $color-hilight;
-$ch2: lighten($ch1, 15%);
-$ch3: lighten($ch1, 5%);
+$color-hilight-light: lighten($color-hilight, 15%);
+$color-hilight-dark: darken($color-hilight, 5%);
 
-/* Define background-color based on primary color. */
 //$color-primary-bg: contrast($color-primary);
 
 /* Cell grid spacing- % will be appended */

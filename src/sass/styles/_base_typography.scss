@@ -33,11 +33,24 @@ h1 {
   color: $h-color;
   border: none;
   font-size: $h-size;
-}
+} 
 
 h2 {
   color: $h-color;
   font-size: $h-size * 0.8;
+   
+  &:after {
+    // Fancy underline style
+    display: block;
+    content: "";
+    height: 1px;
+    margin-top: 10px;
+    background: linear-gradient(
+      to right,
+      $h-color 0%,
+      $swatch-transparent 80%);
+    /**/
+  }
 }
 
 h3 {
@@ -115,4 +128,16 @@ acronym {
   border: 0;
   font-weight: bold;
   font-variant: small-caps;
+}
+
+hr {
+  height: 1px;
+  margin: $p-size 0;
+  border: none;
+  background-image: linear-gradient(
+    to right,
+    rgba($color-neutral, 0),
+    rgba($color-neutral, 0.75),
+    rgba($color-neutral, 0)
+  );
 }

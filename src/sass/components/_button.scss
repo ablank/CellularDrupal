@@ -1,4 +1,8 @@
 button,
 .button {
-  @include button();
+  @include button( $color-hilight, $color-1-bg, "flat");
+
+  &:disabled {
+    @include button( $color-1-bg, $color-neutral, "flat");
+  }
 }

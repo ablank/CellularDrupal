@@ -1,7 +1,7 @@
 /*
   DO NOT EDIT DIRECTLY
   @see src/style-dictionary/variables/
-  Generated on Thu, 14 Jul 2022 08:15:52 GMT
+  Generated on Fri, 15 Jul 2022 00:11:10 GMT
 */
 
 $default-unit: rem;
@@ -97,8 +97,8 @@ $logo-height: 96px;
 $logo-margin: 0px;
 $logo-padding: 0px;
 $logo-border-size: 1px;
-$logo-png: '../assets/images/logo.png';
-$logo-svg: '../assets/images/logo.svg';
+$logo-png: '../dist/assets/images/logo.png';
+$logo-svg: '../dist/assets/images/logo.svg';
 $mediaquery-small: '(max-width: 500px)';
 $mediaquery-narrow: '(min-width: 500px) and (max-width: 960px)';
 $mediaquery-default: '(min-width: 960px) and (max-width: 1600px)';
@@ -118,6 +118,7 @@ $size-big: 1.4rem;
 $size-large: 1.4rem;
 $size-xl: 3rem;
 $size-xxl: 15rem;
+$swatch-transparent: rgba(255, 255, 255, 0);
 $speed: 500ms;
 $fast: 250ms;
 $slow: 1s;
