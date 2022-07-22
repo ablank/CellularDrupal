@@ -1,0 +1,56 @@
+/**
+  * @file
+  *
+  * Styling for author and date information.
+*/
+.post-info {
+  float: left;
+  margin: 0 $p-size $p-size 0;
+  padding: $p-size;
+  text-align: center;
+}
+
+/* Used for comments & article posts. */
+.post-date {
+  display: block;
+  float: left;
+  margin: $p-size $p-size $p-size 0;
+  text-align: center;
+  color: $grey;
+  border: $white-dark $default-border;
+  background: $white;
+
+  @include border-radius($p-xxs);
+
+  .day,
+  .month,
+  .year {
+    display: block;
+  }
+
+  .day {
+    float: left;
+    padding: $p-xxs 0 $p-xxs $p-small;
+  }
+
+  .month {
+    float: left;
+    padding: $p-xxs $p-small $p-xxs $p-small;
+  }
+
+  .year {
+    clear: both;
+    padding: $p-xxs calc($p-size * 0.8);
+    border-top: $grey $default-border;
+    background-color: $white-dark;
+    color: $white;
+  }
+}
+
+.post-author {
+  font-size: $p-small;
+
+  a {
+    display: block;
+  }
+}

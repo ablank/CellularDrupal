@@ -1,0 +1,133 @@
+/**
+  * @file src\sass\styles\_base_typography.scss
+  * Typography
+*/
+
+hr {
+  height: 1px;
+  margin: $p-size 0;
+  border: none;
+  background-image:
+    linear-gradient(
+      to left,
+      rgba($grey, 0),
+      rgba($grey, 0.75),
+      rgba($grey, 0)
+    );
+}
+
+p {
+  display: block;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 $p-size calc($p-line-height * 0.5) $p-size;
+  color: $p-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  display: block;
+  clear: both;
+  margin: $p-size auto $p-xxs;
+  padding: $p-small $p-small 0 $p-size;
+  font-family: $h-font;
+  font-weight: $h-weight;
+  color: $h-color;
+}
+
+h1 {
+  margin: 0;
+  padding: $p-large 1em 0.8em;
+  text-align: center;
+  color: $h-color;
+  border: none;
+  font-size: $h-size;
+  line-height: calc($h-size * 1.1);
+}
+
+h2 {
+  color: $h-color;
+  font-size: calc($h-size * 0.8);
+  line-height: calc($h-size * 1.1);
+}
+
+h3 {
+  color: $h-color;
+  font-size: calc($h-size * 0.6);
+}
+
+small {
+  font-size: $p-small;
+}
+
+sub,
+sup {
+  position: relative;
+  vertical-align: baseline;
+  font-size: calc($p-size * 0.75);
+  line-height: 0;
+}
+
+sup {
+  top: -($p-size * 0.5);
+}
+
+sub {
+  bottom: -($p-size * 0.25);
+}
+
+blockquote,
+q {
+  color: $grey;
+  background-color: $white-dark;
+  font-style: italic;
+
+  &::before {
+    content: "\201C";
+  }
+
+  &::after {
+    content: "\201D";
+  }
+}
+
+q {
+  font-size: calc($p-size * 1.4);
+}
+
+blockquote {
+  display: block;
+  margin: $p-xxs $p-large;
+  padding: $p-size;
+  border-left: $p-xxs solid;
+  font-size: $p-large;
+}
+
+caption {
+  text-align: left;
+}
+
+code,
+pre {
+  display: block;
+  margin: $p-size auto;
+  padding: $p-size;
+  white-space: pre-line;
+  word-wrap: break-word;
+  font-family: $font-console;
+  line-height: $p-size;
+}
+
+code {
+  overflow: scroll;
+}
+
+abbr,
+acronym {
+  border: 0;
+  font-weight: bold;
+  font-variant: small-caps;
+}

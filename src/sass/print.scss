@@ -26,21 +26,23 @@
   a,
   a:visited {
     text-decoration: underline;
-    color: $color-hilight;
+    color: $hilight;
 
-    &:after {
+    &::after {
       content: " (" attr(href) ")";
     }
-  }
-  code a:after {
-    content: none;
   }
 
   pre,
   code,
   blockquote {
-    border: 1px solid $color-2;
+    border: 1px solid $grey;
     page-break-inside: avoid;
+  }
+
+  pre,
+  code a::after {
+    content: none;
   }
 
   #app,

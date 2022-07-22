@@ -1,0 +1,5 @@
+@mixin dropshadow($color: $color-shadow, $spread: $p-small) {
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  $shadow: $offset-x $offset-y $p-xs 0 $color;
+  box-shadow: $shadow;
+}

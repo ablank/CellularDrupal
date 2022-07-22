@@ -1,0 +1,3 @@
+@mixin transition($prop: 'all', $duration: $default-speed, $delay: 0) {
+  transition: $prop $duration ease $delay;
+}

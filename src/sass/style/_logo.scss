@@ -1,0 +1,38 @@
+/**
+  * @file src\sass\styles\__logo.scss
+  * Logo link style
+*/
+
+$_logo-height: calc($logo-height + $logo-padding);
+$_logo-width: calc($logo-width + $logo-padding);
+
+/* Container for logo image & text */
+.logo {
+  z-index: 9;
+  float: left;
+  @if ($header-height > $_logo-height) {
+    padding-top: calc(($header-height - $_logo-height) * 0.5);
+  }
+
+  a {
+    /* Logo + link to frontpage. */
+    display: block;
+    width: $_logo-width;
+    height: $_logo-height;
+    transition: all 300ms ease-in;
+    text-decoration: none;
+    text-indent: -999em;
+    border: none;
+    background-image: $logo-image-png;
+    background-image: $logo-image;
+    background-position: 50% 50%;
+    background-size: $logo-width $logo-height;
+    box-shadow: 0 0 0 0 $black;
+    will-change: width, height, box-shadow;
+
+    &:focus,
+    &:hover {
+      box-shadow: 0 0 0.4em 0 $hilight;
+    }
+  }
+}

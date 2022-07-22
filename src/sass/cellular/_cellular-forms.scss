@@ -1,0 +1,61 @@
+// Form Alignment Classes
+form.horizontal {
+  display: inline;
+  max-width: none;
+  padding: 0;
+
+  label,
+  input {
+    display: inline;
+    clear: none;
+  }
+
+  input[type="submit"] {
+    display: inline;
+    float: none;
+    margin: 0 $p-xxs;
+  }
+}
+
+form.vertical {
+  text-align: center;
+
+  label,
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    display: block;
+  }
+
+  input[type="submit"] {
+    float: none;
+    margin: $p-xxs auto;
+  }
+}
+
+// Form Alert Classes 
+.ok,
+.warning,
+.error {
+  @include border-radius();
+  border: $p-xxs solid;
+  font-weight: bold;
+}
+
+.ok {
+  color: $color-success;
+  border-color: $color-success;
+  background-color: lighten($color-success, 80%);
+}
+
+.warning {
+  color: $color-warning;
+  border-color: $color-warning;
+  background-color: lighten($color-warning, 80%);
+}
+
+.error {
+  color: $color-error;
+  border-color: $color-error;
+  background-color: lighten($color-error, 80%);
+}

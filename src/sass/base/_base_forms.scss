@@ -1,0 +1,202 @@
+/**
+  * @file src\sass\styles\_base_forms.scss
+  * Form styling
+*/
+
+form {
+  display: block;
+  margin: auto;
+  padding: 0;
+  max-width: 34em;
+}
+
+fieldset {
+  margin: 2em $p-xxs 1em $p-xxs;
+  padding: $p-xxs;
+  border: $default-border;
+  // @include clear();
+}
+
+legend {
+  color: $grey;
+  background: $white-dark;
+  position: absolute;
+  top: -$p-size;
+  padding: 0 $p-small;
+  font-family: $h-font;
+  font-size: $p-large;
+  font-weight: normal;
+  @include clear();
+}
+
+label {
+  display: inline-block;
+  text-align: left;
+  margin: $p-xxs 0 0;
+  padding: $p-size $p-xxs 0 0;
+  font-family: $p-font;
+  font-weight: $h-weight;
+
+  + input {
+    @include clear();
+  }
+}
+
+input,
+select,
+textarea {
+  display: inline-block;
+  max-width: $p-max-width;
+  margin: auto;
+  padding: $p-xxs 0;
+  text-align: left;
+  vertical-align: top;
+  text-indent: $p-xxs;
+  color: $p-color;
+  border: $grey 1px solid;
+  background: darken($white, 1%);
+  font: 1em/1.6em $p-font;
+  @include border-radius();
+  @include transition();
+
+  &:focus {
+    color: $p-color;
+    outline: none;
+    background: $white;
+    box-shadow: 0 0 $p-xxs 0 $hilight;
+  }
+
+  &.year,
+  &.month,
+  &.day,
+  &.hour,
+  &.minute {
+    width: auto;
+  }
+}
+
+textarea {
+  width: 100%;
+  overflow: auto;
+  vertical-align: top;
+}
+
+select {
+  margin: $p-xxs auto;
+  padding: $p-xxs;
+  cursor: pointer;
+  text-indent: unset;
+}
+
+optgroup {
+  background: darken($white, 5%);
+}
+
+option {
+  border-bottom: $grey thin dotted;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+input {
+
+  &[type="button"],
+  &[type="submit"] {
+    display: inline-block;
+    @include button();
+    margin-bottom: $p-size;
+  }
+
+  &[required],
+  &.required {
+    box-shadow: 0 0 0.1em 0 $hilight;
+
+    &::after {
+      // content: ' *';
+    }
+  }
+
+  &[type="date"],
+  &[type="datetime-local"] {
+  }
+
+  &[type="file"] {
+    width: auto;
+
+    &:host(input) {
+      margin: 0.1em 1em;
+      text-indent: 1em;
+    }
+  }
+
+  &[type="image"] {
+    width: auto;
+    border: none;
+  }
+
+  &[type="text"],
+  &[type="number"],
+  &[type="tel"],
+  &[type="search"],
+  &[type="email"],
+  &[type="password"] {
+    width: 100%;
+  }
+
+  &[type="checkbox"],
+  &[type="radio"] {
+    @include checkbox(1.2em);
+  }
+
+  &[type="checkbox"] {
+    + label::before {
+      border-radius: $p-xxs;
+    }
+
+    &:checked {
+      + label::after {
+        /* x-position = size * 2 */
+        background-position: -2.4em 1px;
+      }
+    }
+  }
+
+  &[type="radio"] {
+    + label::before {
+      border-radius: 50%;
+    }
+
+    &:checked {
+      + label::after {
+        background-position: 1px 1px;
+      }
+    }
+  }
+
+  &[type="range"] {
+    width: 100%;
+    appearance: none;
+
+    &:focus {
+      outline: none;
+    }
+
+    // Hide default sliders
+    &::-webkit-slider-thumb {
+      appearance: none;
+    }
+    &::-ms-track {
+      width: 100%;
+      cursor: pointer;
+      color: transparent;
+      border-color: transparent;
+      background: transparent;
+    }
+  }
+  
+  &[type="hidden"] {
+    display: none;
+  }
+}

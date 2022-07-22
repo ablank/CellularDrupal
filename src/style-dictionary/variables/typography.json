@@ -1,0 +1,35 @@
+{
+  "font": {
+    "times": {"value": "Cambria, \"Hoefler Text\", Utopia, \"Liberation Serif\", \"Nimbus Roman No9 L Regular\", Times, \"Times New Roman\", serif"},
+    "garamond": {"value": "\"Palatino Linotype\", Palatino, Palladio, \"URW Palladio L\", \"Book Antiqua\", Baskerville, \"Bookman Old Style\", \"Bitstream Charter\", \"Nimbus Roman No9 L\", Garamond, \"Apple Garamond\", \"ITC Garamond Narrow\", \"New Century Schoolbook\", \"Century Schoolbook\", \"Century Schoolbook L\", Georgia, serif;"},
+    "georgia": {"value": "Constantia, \"Lucida Bright\", Lucidabright, \"Lucida Serif\", Lucida, \"DejaVu Serif\", \"Bitstream Vera Serif\", \"Liberation Serif\", Georgia, serif"},
+    "impact": {"value": "Impact, Haettenschweiler, \"Franklin Gothic Bold\", Charcoal, \"Helvetica Inserat\", \"Bitstream Vera Sans Bold\", \"Arial Black\", sans-serif"},
+    "helvetica": {"value": "Frutiger, \"Frutiger Linotype\", Univers, Calibri, \"Gill Sans\", \"Gill Sans MT\", \"Myriad Pro\", Myriad, \"DejaVu Sans Condensed\", \"Liberation Sans\", \"Nimbus Sans L\", Tahoma, Geneva, \"Helvetica Neue\", Helvetica, Arial, sans-serif"},
+    "lucida": {"value": "\"Lucida Grande\", \"Lucida Sans Unicode\", \"Geneva\", \"Verdana\", sans-serif"},
+    "trebuchet": {"value": "\"Segoe UI\", Candara, \"Bitstream Vera Sans\", \"DejaVu Sans\", \"Bitstream Vera Sans\", \"Trebuchet MS\", Verdana, \"Verdana Ref\", sans-serif"},
+    "veranda": {"value": "Corbel, \"Lucida Grande\", \"Lucida Sans Unicode\", \"Lucida Sans\", \"DejaVu Sans\", \"Bitstream Vera Sans\", \"Liberation Sans\", Verdana, \"Verdana Ref\", sans-serif"},
+    "console": {"value": "Consolas, \"Andale Mono WT\", \"Andale Mono\", \"Lucida Console\", \"Lucida Sans Typewriter\", \"DejaVu Sans Mono\", \"Bitstream Vera Sans Mono\", \"Liberation Mono\", \"Nimbus Mono L\", Monaco, \"Courier New\", Courier, monospace"},
+    "system": {"value": "system, -apple-system, \".SFNSText-Regular\", \"San Francisco\", \"Roboto\", \"Segoe UI\", \"Helvetica Neue\", \"Lucida Grande\", sans-serif"}
+  },
+  "p": {
+    "color": {"value": "{color.primary.value}"},
+    "font": {"value": "{font.helvetica.value}"},
+    "line-height": {"value": "{large.value}{default.unit}","category": "dynamic"},
+    "max-width": {"value": "32em"},
+    "weight": {"value": "normal"},
+    "size": {"value": "{baseline.value}{default.unit}"},
+    "xxs": {"value": "{xxs.value}{default.unit}"},
+    "xs": {"value": "{xs.value}{default.unit}"},
+    "small": {"value": "{small.value}{default.unit}"},
+    "large": {"value": "{large.value}{default.unit}"},
+    "xl": {"value": "{xl.value}{default.unit}"},
+    "xxl": {"value": "{xxl.value}{default.unit}"}
+  },
+  "h": {
+    "font": { "value": "{font.impact.value}" },
+    "size": { "value": "{xl.value}{default.unit}" },
+    "line-height": { "value": "{xl.value}{default.unit}" },
+    "weight": { "value": "bold" },
+    "color": { "value": "{swatch.grey.value}" }
+  }
+}

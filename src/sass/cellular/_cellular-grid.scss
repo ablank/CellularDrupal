@@ -1,0 +1,114 @@
+/**
+  * @file src\sass\styles\_cellular-grid.scss
+  * Cellular Grid
+*/
+
+.cell {
+  width: 100%;
+}
+
+.container {
+  max-width: $grid-cell-max-width;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  column-gap: $grid-cell-space;
+  row-gap: $grid-cell-space;
+  align-items: stretch;
+  justify-items: stretch;
+  grid-auto-flow: row;
+
+  > * {
+    @include transition();
+  }
+
+  &.cols1,
+  &.cols2,
+  &.cols3,
+  &.cols4,
+  &.cols5,
+  &.rows1,
+  &.rows2,
+  &.rows3,
+  &.rows4,
+  &.rows5 {
+
+  }
+
+  &.cols1 {
+    grid-template-columns: 1fr;
+  }
+
+  &.cols2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &.cols3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  &.cols4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  &.cols5 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  &.rows1 {
+    grid-template-rows: 1fr;
+  }
+
+  &.rows2 {
+    grid-template-rows: 1fr 1fr;
+  }
+
+  &.rows3 {
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  &.rows4 {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  &.rows5 {
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+@include mediaquery($mediaquery-small) {
+  .grid {
+    &.cols2,
+    &.cols3,
+    &.cols4,
+    &.cols5 {
+      grid-template-columns: 1fr;
+    }
+
+    &.rows2,
+    &.rows3,
+    &.rows4,
+    &.rows5 {
+      grid-template-rows: 1fr;
+    }
+  }
+}
+
+@include mediaquery($mediaquery-narrow) {
+  .grid {
+    &.cols3,
+    &.cols4,
+    &.cols5 {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &.rows2,
+    &.rows3,
+    &.rows4,
+    &.rows5 {
+      grid-template-rows: 1fr;
+    }
+  }
+}

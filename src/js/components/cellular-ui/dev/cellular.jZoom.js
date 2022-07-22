@@ -1,30 +1,31 @@
 cellular.jZoom = function (opts) {
-  var o = jQuery.extend(
-    {
-      cclass: "jZoom",
-      trigger: "jZoom",
-      offsetX: "1em",
-      offsetY: "1em",
-    },
-    opts
-  );
-  var fn = {};
+  var o = jQuery.extend({
+    cclass: "jZoom",
+    trigger: "jZoom",
+    offsetX: "1em",
+    offsetY: "1em",
+  }, opts),
+    fn = {};
 
-  fn.showZoom = function ($obj) {};
+  fn.showZoom = function ($obj) {
 
-  fn.closeZoom = function () {};
+  };
+
+  fn.closeZoom = function () {
+
+  };
 
   fn.updateZoom = function ($obj) {
-    var imgx = $obj.prop("x");
-    var imgy = $obj.prop("y");
+
+    var imgx = $obj.prop('x');
+    var imgy = $obj.prop('y');
     console.log(imgy);
   };
   fn.style = function ($obj) {
-    $obj.one(o.cclass, function () {
-      jQuery(this)
-        .wrap(`<span class="${o.cclass}-wrap" />`)
-        .after(`<span class="${o.cclass}-trigger">Zoom Image</span>`)
-        .after(`<span class="${o.cclass}-window">`);
+    $obj.once(o.cclass, function () {
+      jQuery(this).wrap('<span class="' + o.cclass + '-wrap" />')
+        .after('<span class="' + o.cclass + '-trigger">Zoom Image</span>')
+        .after('<span class="' + o.cclass + '-window">');
     });
   };
   /**
@@ -33,28 +34,28 @@ cellular.jZoom = function (opts) {
    * @param object $obj
    */
   fn.events = function ($obj) {
-    var $zwin = $obj.parent().find(`.${o.cclass}-window`);
-    $obj.on("click", function (e) {
+    var $zwin = $obj.parent().find('.' + o.cclass + '-window');
+    $obj.on('click', function (e) {
       e.preventDefault();
       $zwin.activate();
     });
-    $zwin.on("mouseleave blur", function () {
+    $zwin.on('mouseleave blur', function () {
       $zwin.deactivate();
     });
-    $zwin.on("mousedown", fn.updateZoom($obj));
+    $zwin.on('mousedown', fn.updateZoom($obj));
   };
 
   /**
    * Init jTabs
    */
   fn.init = function () {
-    var $obj = jQuery(this);
-    var state = {
-      active: false,
-    };
+    var $obj = jQuery(this),
+      state = {
+        active: false
+      };
 
     fn.style($obj);
-    // Set default content
+    //Set default content
     fn.events($obj);
   };
 

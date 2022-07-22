@@ -1,23 +1,35 @@
 {
   "breakpoint": {
-    "unit": {
-      "category": "unit",
-      "ivalue": "px"
-    },
+    "unit": "px",
+    "small": { "value": "500" },
+    "narrow": { "value": "960" },
+    "default": {
+      "value": "1600",
+      "comment": "Styles for laptops and desktop monitors. Anything greater than this breakpoint is considered 'large'"
+    }
+  },
+  "mediaquery": {
     "small": {
       "category": "mediaquery",
-      "ivalue": "500",
+      "value": "'(max-width: {breakpoint.small.value}{breakpoint.unit})'",
       "comment": "Styles for mobile devices."
     },
     "narrow": {
       "category": "mediaquery",
-      "ivalue": "960",
+      "value": "'(min-width: {breakpoint.small.value}{breakpoint.unit}) and (max-width: {breakpoint.narrow.value}{breakpoint.unit})'",
       "comment": "Styles for tablets."
     },
     "default": {
       "category": "mediaquery",
-      "ivalue": "1600",
-      "comment": "Styles for most laptop & desktop computers. Anything greater than this breakpoint is considered 'large'"
+      "value": "'(min-width: {breakpoint.narrow.value}{breakpoint.unit}) and (max-width: {breakpoint.default.value}{breakpoint.unit})'"
+    },
+    "large": {
+      "category": "mediaquery",
+      "value": "'(min-width: {breakpoint.default.value}{breakpoint.unit})'"
+    },
+    "retina": {
+      "category": "mediaquery",
+      "value": "'screen and (min-resolution: 192dpi) and (min-resolution: 2dppx)'"
     }
   }
 }

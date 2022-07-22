@@ -1,0 +1,1202 @@
+
+src/sass/lint-sass.txt
+ 3:2  ✖  Unknown word  CssSyntaxError
+
+src/sass/print.scss
+ 44:3  ✖  Expected selector "code a::after" to come before selector "a:visited::after"  no-descending-specificity
+
+src/sass/_custom.scss
+ 204:3  ✖  Unknown word  CssSyntaxError
+
+src/sass/breakpoints/_default.scss
+ 5:1  ✖  Unexpected unknown at-rule "@include"  at-rule-no-unknown
+
+src/sass/breakpoints/_large.scss
+  6:1   ✖  Unexpected unknown at-rule "@include"  at-rule-no-unknown
+  8:5   ✖  Unexpected empty block                 block-no-empty    
+ 16:6   ✖  Unexpected empty block                 block-no-empty    
+ 19:6   ✖  Unexpected empty block                 block-no-empty    
+ 22:6   ✖  Unexpected empty block                 block-no-empty    
+ 25:6   ✖  Unexpected empty block                 block-no-empty    
+ 28:6   ✖  Unexpected empty block                 block-no-empty    
+ 31:6   ✖  Unexpected empty block                 block-no-empty    
+ 34:6   ✖  Unexpected empty block                 block-no-empty    
+ 40:13  ✖  Unexpected empty block                 block-no-empty    
+ 45:13  ✖  Unexpected empty block                 block-no-empty    
+ 48:11  ✖  Unexpected empty block                 block-no-empty    
+ 52:14  ✖  Unexpected empty block                 block-no-empty    
+ 55:11  ✖  Unexpected empty block                 block-no-empty    
+ 58:8   ✖  Unexpected empty block                 block-no-empty    
+ 61:17  ✖  Unexpected empty block                 block-no-empty    
+ 64:12  ✖  Unexpected empty block                 block-no-empty    
+
+src/sass/breakpoints/_narrow.scss
+  6:1   ✖  Unexpected unknown at-rule "@include"  at-rule-no-unknown
+  8:5   ✖  Unexpected empty block                 block-no-empty    
+ 16:6   ✖  Unexpected empty block                 block-no-empty    
+ 19:6   ✖  Unexpected empty block                 block-no-empty    
+ 22:6   ✖  Unexpected empty block                 block-no-empty    
+ 25:6   ✖  Unexpected empty block                 block-no-empty    
+ 28:6   ✖  Unexpected empty block                 block-no-empty    
+ 31:6   ✖  Unexpected empty block                 block-no-empty    
+ 34:6   ✖  Unexpected empty block                 block-no-empty    
+ 40:13  ✖  Unexpected empty block                 block-no-empty    
+ 45:13  ✖  Unexpected empty block                 block-no-empty    
+ 48:11  ✖  Unexpected empty block                 block-no-empty    
+ 52:14  ✖  Unexpected empty block                 block-no-empty    
+ 55:11  ✖  Unexpected empty block                 block-no-empty    
+ 58:8   ✖  Unexpected empty block                 block-no-empty    
+ 61:17  ✖  Unexpected empty block                 block-no-empty    
+ 64:12  ✖  Unexpected empty block                 block-no-empty    
+
+src/sass/breakpoints/_retina.scss
+  6:1   ✖  Unexpected unknown at-rule "@include"  at-rule-no-unknown
+  8:5   ✖  Unexpected empty block                 block-no-empty    
+ 16:6   ✖  Unexpected empty block                 block-no-empty    
+ 19:6   ✖  Unexpected empty block                 block-no-empty    
+ 22:6   ✖  Unexpected empty block                 block-no-empty    
+ 25:6   ✖  Unexpected empty block                 block-no-empty    
+ 28:6   ✖  Unexpected empty block                 block-no-empty    
+ 31:6   ✖  Unexpected empty block                 block-no-empty    
+ 34:6   ✖  Unexpected empty block                 block-no-empty    
+ 40:13  ✖  Unexpected empty block                 block-no-empty    
+ 45:13  ✖  Unexpected empty block                 block-no-empty    
+ 48:11  ✖  Unexpected empty block                 block-no-empty    
+ 52:14  ✖  Unexpected empty block                 block-no-empty    
+ 55:11  ✖  Unexpected empty block                 block-no-empty    
+ 58:8   ✖  Unexpected empty block                 block-no-empty    
+ 61:17  ✖  Unexpected empty block                 block-no-empty    
+ 64:12  ✖  Unexpected empty block                 block-no-empty    
+
+src/sass/breakpoints/_small.scss
+  5:1   ✖  Unexpected unknown at-rule "@include"  at-rule-no-unknown
+  7:5   ✖  Unexpected empty block                 block-no-empty    
+ 15:6   ✖  Unexpected empty block                 block-no-empty    
+ 18:6   ✖  Unexpected empty block                 block-no-empty    
+ 21:6   ✖  Unexpected empty block                 block-no-empty    
+ 24:6   ✖  Unexpected empty block                 block-no-empty    
+ 27:6   ✖  Unexpected empty block                 block-no-empty    
+ 30:6   ✖  Unexpected empty block                 block-no-empty    
+ 33:6   ✖  Unexpected empty block                 block-no-empty    
+ 38:14  ✖  Unexpected empty block                 block-no-empty    
+ 42:13  ✖  Unexpected empty block                 block-no-empty    
+ 45:11  ✖  Unexpected empty block                 block-no-empty    
+ 49:14  ✖  Unexpected empty block                 block-no-empty    
+ 52:11  ✖  Unexpected empty block                 block-no-empty    
+ 55:8   ✖  Unexpected empty block                 block-no-empty    
+ 58:17  ✖  Unexpected empty block                 block-no-empty    
+ 61:12  ✖  Unexpected empty block                 block-no-empty    
+
+src/sass/components/_breadcrumb.scss
+ 18:12  ✖  Unexpected unknown function "lighten"           function-no-unknown
+ 19:27  ✖  Expected quotes around "url" function argument  function-url-quotes
+ 34:31  ✖  Expected quotes around "url" function argument  function-url-quotes
+
+src/sass/components/_button.scss
+ 3:3  ✖  Unexpected unknown at-rule "@include"  at-rule-no-unknown
+
+src/sass/components/_calendar.scss
+   7:15  ✖  Unexpected unknown function "darken"                                              function-no-unknown      
+  24:7   ✖  Unexpected unknown at-rule "@include"                                             at-rule-no-unknown       
+  59:5   ✖  Unexpected unknown at-rule "@include"                                             at-rule-no-unknown       
+  66:3   ✖  Expected selector ".date-box a" to come before selector ".date-nav-wrapper        no-descending-specificity
+            .date-prev a"                                                                                              
+  66:3   ✖  Expected selector ".date-box a" to come before selector ".date-nav-wrapper        no-descending-specificity
+            .date-next a"                                                                                              
+  71:3   ✖  Expected selector ".date-box a" to come before selector ".date-nav-wrapper        no-descending-specificity
+            .date-prev a"                                                                                              
+  71:3   ✖  Expected selector ".date-box a" to come before selector ".date-nav-wrapper        no-descending-specificity
+            .date-next a"                                                                                              
+  71:3   ✖  Expected selector ".date-box a" to come before selector ".date-box a:visited"     no-descending-specificity
+  76:14  ✖  Unexpected unknown function "lighten"                                             function-no-unknown      
+  83:5   ✖  Unexpected unknown at-rule "@include"                                             at-rule-no-unknown       
+  95:7   ✖  Unexpected unknown at-rule "@include"                                             at-rule-no-unknown       
+ 101:25  ✖  Unexpected unknown function "darken"                                              function-no-unknown      
+ 112:3   ✖  Expected selector ".single-day a" to come before selector ".date-nav-wrapper      no-descending-specificity
+            .date-prev a"                                                                                              
+ 112:3   ✖  Expected selector ".single-day a" to come before selector ".date-nav-wrapper      no-descending-specificity
+            .date-next a"                                                                                              
+ 112:3   ✖  Expected selector ".single-day a" to come before selector ".date-box a:visited"   no-descending-specificity
+ 112:3   ✖  Expected selector ".single-day a" to come before selector ".date-box a:active"    no-descending-specificity
+ 112:3   ✖  Expected selector ".single-day a" to come before selector ".date-box a:hover"     no-descending-specificity
+ 112:3   ✖  Expected selector ".single-day a" to come before selector ".date-box a:focus"     no-descending-specificity
+ 112:3   ✖  Expected selector ".single-day a" to come before selector ".date-box a:visited"   no-descending-specificity
+ 112:3   ✖  Expected selector ".single-day a" to come before selector ".single-day td.past    no-descending-specificity
+            a"                                                                                                         
+ 112:3   ✖  Expected selector ".single-day a" to come before selector ".single-day td.past    no-descending-specificity
+            a"                                                                                                         
+ 112:3   ✖  Expected selector ".single-day a" to come before selector ".single-day td.past    no-descending-specificity
+            a:visited"                                                                                                 
+ 113:5   ✖  Expected selector ".single-day a" to come before selector ".date-nav-wrapper      no-descending-specificity
+            .date-prev a"                                                                                              
+ 113:5   ✖  Expected selector ".single-day a" to come before selector ".date-nav-wrapper      no-descending-specificity
+            .date-next a"                                                                                              
+ 113:5   ✖  Expected selector ".single-day a" to come before selector ".date-box a:visited"   no-descending-specificity
+ 113:5   ✖  Expected selector ".single-day a" to come before selector ".date-box a:active"    no-descending-specificity
+ 113:5   ✖  Expected selector ".single-day a" to come before selector ".date-box a:hover"     no-descending-specificity
+ 113:5   ✖  Expected selector ".single-day a" to come before selector ".date-box a:focus"     no-descending-specificity
+ 113:5   ✖  Expected selector ".single-day a" to come before selector ".date-box a:visited"   no-descending-specificity
+ 113:5   ✖  Expected selector ".single-day a" to come before selector ".single-day td.past    no-descending-specificity
+            a"                                                                                                         
+ 113:5   ✖  Expected selector ".single-day a" to come before selector ".single-day td.past    no-descending-specificity
+            a"                                                                                                         
+ 113:5   ✖  Expected selector ".single-day a" to come before selector ".single-day td.past    no-descending-specificity
+            a:visited"                                                                                                 
+ 113:5   ✖  Expected selector ".single-day a:visited" to come before selector ".single-day    no-descending-specificity
+            td.past a"                                                                                                 
+ 113:5   ✖  Expected selector ".single-day a:visited" to come before selector ".single-day    no-descending-specificity
+            td.past a"                                                                                                 
+ 113:5   ✖  Expected selector ".single-day a:visited" to come before selector ".single-day    no-descending-specificity
+            td.past a:visited"                                                                                         
+ 119:19  ✖  Unexpected unknown function "darken"                                              function-no-unknown      
+ 122:5   ✖  Expected selector ".single-day a:active" to come before selector ".single-day     no-descending-specificity
+            td.past a"                                                                                                 
+ 122:5   ✖  Expected selector ".single-day a:active" to come before selector ".single-day     no-descending-specificity
+            td.past a"                                                                                                 
+ 122:5   ✖  Expected selector ".single-day a:active" to come before selector ".single-day     no-descending-specificity
+            td.past a:visited"                                                                                         
+ 122:5   ✖  Expected selector ".single-day a:hover" to come before selector ".single-day      no-descending-specificity
+            td.past a"                                                                                                 
+ 122:5   ✖  Expected selector ".single-day a:hover" to come before selector ".single-day      no-descending-specificity
+            td.past a"                                                                                                 
+ 122:5   ✖  Expected selector ".single-day a:hover" to come before selector ".single-day      no-descending-specificity
+            td.past a:visited"                                                                                         
+ 122:5   ✖  Expected selector ".single-day a:focus" to come before selector ".single-day      no-descending-specificity
+            td.past a"                                                                                                 
+ 122:5   ✖  Expected selector ".single-day a:focus" to come before selector ".single-day      no-descending-specificity
+            td.past a"                                                                                                 
+ 122:5   ✖  Expected selector ".single-day a:focus" to come before selector ".single-day      no-descending-specificity
+            td.past a:visited"                                                                                         
+ 122:5   ✖  Expected selector ".single-day a:visited" to come before selector ".single-day    no-descending-specificity
+            td.past a"                                                                                                 
+ 122:5   ✖  Expected selector ".single-day a:visited" to come before selector ".single-day    no-descending-specificity
+            td.past a"                                                                                                 
+ 122:5   ✖  Expected selector ".single-day a:visited" to come before selector ".single-day    no-descending-specificity
+            td.past a:visited"                                                                                         
+
+src/sass/components/_card.scss
+  26:5   ✖  Unexpected unknown at-rule "@include"                                             at-rule-no-unknown       
+  29:19  ✖  Unexpected unknown function "darken"                                              function-no-unknown      
+  33:14  ✖  Unexpected unknown function "darken"                                              function-no-unknown      
+  34:21  ✖  Unexpected unknown function "darken"                                              function-no-unknown      
+  35:25  ✖  Unexpected unknown function "lighten"                                             function-no-unknown      
+ 114:3   ✖  Expected selector ".promotion-promo" to come before selector ".card:hover         no-descending-specificity
+            .promotion-promo"                                                                                          
+ 123:3   ✖  Expected selector ".promotion-price" to come before selector ".card:hover         no-descending-specificity
+            .promotion-price"                                                                                          
+
+src/sass/components/_comments.scss
+ 36:23  ✖  Unexpected unknown function "darken"                                       function-no-unknown      
+ 41:1   ✖  Expected selector ".comment" to come before selector ".indented .comment"  no-descending-specificity
+ 42:3   ✖  Unexpected unknown at-rule "@include"                                      at-rule-no-unknown       
+ 48:21  ✖  Unexpected unknown function "darken"                                       function-no-unknown      
+ 55:23  ✖  Unexpected unknown function "darken"                                       function-no-unknown      
+ 61:23  ✖  Unexpected unknown function "darken"                                       function-no-unknown      
+
+src/sass/components/_date.scss
+  9:1  ✖  Expected selector "label" to come before selector ".date-clear > label"  no-descending-specificity
+ 19:3  ✖  Unexpected unknown at-rule "@include"                                    at-rule-no-unknown       
+
+src/sass/components/_forms.scss
+ 13:1   ✖  Expected selector "label + div" to come before selector ".container-inline div"    no-descending-specificity
+ 13:13  ✖  Unexpected empty block                                                             block-no-empty           
+ 16:1   ✖  Expected selector "label + input" to come before selector ".container-inline       no-descending-specificity
+           input"                                                                                                      
+ 17:3   ✖  Unexpected unknown at-rule "@include"                                              at-rule-no-unknown       
+
+src/sass/components/_icons.scss
+ 33:11  ✖  Unknown word  CssSyntaxError
+
+src/sass/components/_navigation.scss
+   8:3   ✖  Unexpected unknown at-rule "@include"                                             at-rule-no-unknown       
+  36:7   ✖  Expected selector "#main-menu a:focus" to come before selector "#main-menu        no-descending-specificity
+            a:visited:hover"                                                                                           
+  36:7   ✖  Expected selector "#main-menu a:active" to come before selector "#main-menu       no-descending-specificity
+            a:visited:hover"                                                                                           
+  36:7   ✖  Expected selector "#main-menu a:active" to come before selector "#main-menu       no-descending-specificity
+            a:visited:focus"                                                                                           
+  58:7   ✖  Unexpected unknown at-rule "@include"                                             at-rule-no-unknown       
+  64:9   ✖  Unexpected unknown at-rule "@include"                                             at-rule-no-unknown       
+  69:3   ✖  Expected selector "#main-menu li" to come before selector "#main-menu >           no-descending-specificity
+            li:first-child"                                                                                            
+  69:3   ✖  Expected selector "#main-menu li" to come before selector "#main-menu >           no-descending-specificity
+            li:last-child"                                                                                             
+  80:7   ✖  Unexpected unknown at-rule "@include"                                             at-rule-no-unknown       
+  90:19  ✖  Unexpected unknown function "darken"                                              function-no-unknown      
+  91:24  ✖  Unexpected unknown function "darken"                                              function-no-unknown      
+  97:7   ✖  Unexpected unknown at-rule "@if"                                                  at-rule-no-unknown       
+ 105:7   ✖  Unexpected unknown at-rule "@else"                                                at-rule-no-unknown       
+ 114:5   ✖  Expected selector "#main-menu li.parent::after" to come before selector           no-descending-specificity
+            "#main-menu > li.parent::after:hover"                                                                      
+ 117:7   ✖  Unexpected unknown at-rule "@include"                                             at-rule-no-unknown       
+ 122:9   ✖  Unexpected unknown at-rule "@include"                                             at-rule-no-unknown       
+ 131:5   ✖  Unexpected unknown at-rule "@if"                                                  at-rule-no-unknown       
+ 137:11  ✖  Unexpected unknown at-rule "@include"                                             at-rule-no-unknown       
+ 143:7   ✖  Expected selector "#main-menu li li" to come before selector "#main-menu          no-descending-specificity
+            li:focus"                                                                                                  
+ 143:7   ✖  Expected selector "#main-menu li li" to come before selector "#main-menu          no-descending-specificity
+            li:hover"                                                                                                  
+ 150:9   ✖  Expected selector "#main-menu li li ul" to come before selector "#main-menu       no-descending-specificity
+            li:focus > ul"                                                                                             
+ 150:9   ✖  Expected selector "#main-menu li li ul" to come before selector "#main-menu       no-descending-specificity
+            li:hover > ul"                                                                                             
+ 150:9   ✖  Expected selector "#main-menu li li ul" to come before selector "#main-menu       no-descending-specificity
+            li.active > ul"                                                                                            
+ 155:11  ✖  Unexpected unknown at-rule "@if"                                                  at-rule-no-unknown       
+ 160:11  ✖  Unexpected unknown at-rule "@else"                                                at-rule-no-unknown       
+
+src/sass/components/_pager.scss
+ 22:5  ✖  Unexpected unknown at-rule "@include"                                           at-rule-no-unknown       
+ 54:3  ✖  Expected selector ".pager-first a" to come before selector ".pager a:hover"     no-descending-specificity
+ 54:3  ✖  Expected selector ".pager-first a" to come before selector ".pager a:focus"     no-descending-specificity
+ 54:3  ✖  Expected selector ".pager-previous a" to come before selector ".pager a:hover"  no-descending-specificity
+ 54:3  ✖  Expected selector ".pager-previous a" to come before selector ".pager a:focus"  no-descending-specificity
+ 54:3  ✖  Expected selector ".pager-next a" to come before selector ".pager a:hover"      no-descending-specificity
+ 54:3  ✖  Expected selector ".pager-next a" to come before selector ".pager a:focus"      no-descending-specificity
+ 54:3  ✖  Expected selector ".pager-last a" to come before selector ".pager a:hover"      no-descending-specificity
+ 54:3  ✖  Expected selector ".pager-last a" to come before selector ".pager a:focus"      no-descending-specificity
+
+src/sass/components/_postinfo.scss
+ 21:15  ✖  Unexpected unknown function "lighten"  function-no-unknown
+ 23:3   ✖  Unexpected unknown at-rule "@include"  at-rule-no-unknown 
+
+src/sass/components/_search.scss
+ 65:27  ✖  Unexpected unknown function "darken"  function-no-unknown
+
+src/sass/components/_tabs.scss
+  2:3   ✖  Unexpected unknown at-rule "@include"  at-rule-no-unknown 
+ 17:7   ✖  Unexpected unknown at-rule "@include"  at-rule-no-unknown 
+ 35:22  ✖  Unexpected unknown function "darken"   function-no-unknown
+ 36:25  ✖  Unexpected unknown function "darken"   function-no-unknown
+ 54:9   ✖  Unexpected unknown at-rule "@include"  at-rule-no-unknown 
+
+src/sass/pages/_frontpage.scss
+ 10:12  ✖  Unexpected empty block  block-no-empty
+
+src/sass/pages/_parallax_grouped.scss
+ 42:1  ✖  Expected class selector to be kebab-case  selector-class-pattern
+ 48:1  ✖  Expected class selector to be kebab-case  selector-class-pattern
+
+src/sass/pages/___index.scss
+ 10:1  ✖  Unknown word  CssSyntaxError
+
+src/sass/styles/_base_animations.scss
+  72:1   ✖  Unexpected unknown at-rule "@mixin"      at-rule-no-unknown    
+  97:1   ✖  Unexpected unknown at-rule "@mixin"      at-rule-no-unknown    
+  98:14  ✖  Expected keyframe name to be kebab-case  keyframes-name-pattern
+ 111:14  ✖  Expected keyframe name to be kebab-case  keyframes-name-pattern
+ 127:1   ✖  Unexpected unknown at-rule "@mixin"      at-rule-no-unknown    
+ 154:1   ✖  Unexpected unknown at-rule "@mixin"      at-rule-no-unknown    
+
+src/sass/styles/_base_forms.scss
+  59:3   ✖  Unexpected unknown at-rule "@include"                                             at-rule-no-unknown       
+  73:1   ✖  Expected selector "label" to come before selector "form.horizontal label"         no-descending-specificity
+  73:1   ✖  Expected selector "label" to come before selector "form.vertical label"           no-descending-specificity
+  83:1   ✖  Expected selector "input" to come before selector "form.horizontal input"         no-descending-specificity
+  86:3   ✖  Unexpected unknown at-rule "@include"                                             at-rule-no-unknown       
+  87:3   ✖  Unexpected unknown at-rule "@include"                                             at-rule-no-unknown       
+ 100:15  ✖  Unexpected unknown function "darken"                                              function-no-unknown      
+ 104:3   ✖  Expected selector "input:focus" to come before selector "form.horizontal input"   no-descending-specificity
+ 120:1   ✖  Expected selector "textarea" to come before selector "textarea:focus"             no-descending-specificity
+ 127:1   ✖  Expected selector "select" to come before selector "select:focus"                 no-descending-specificity
+ 135:15  ✖  Unexpected unknown function "darken"                                              function-no-unknown      
+ 146:1   ✖  Expected selector "input" to come before selector "form.horizontal input"         no-descending-specificity
+ 146:1   ✖  Expected selector "input" to come before selector "input:focus"                   no-descending-specificity
+ 174:3   ✖  Expected selector "input[type="text"]" to come before selector "form.vertical     no-descending-specificity
+            input[type="text"]"                                                                                        
+ 174:3   ✖  Expected selector "input[type="email"]" to come before selector "form.vertical    no-descending-specificity
+            input[type="email"]"                                                                                       
+ 174:3   ✖  Expected selector "input[type="password"]" to come before selector                no-descending-specificity
+            "form.vertical input[type="password"]"                                                                     
+ 179:22  ✖  Unexpected empty block                                                            block-no-empty           
+ 184:5   ✖  Unexpected unknown at-rule "@include"                                             at-rule-no-unknown       
+ 212:12  ✖  Unexpected empty block                                                            block-no-empty           
+ 240:1   ✖  Expected selector "input[type="submit"]" to come before selector                  no-descending-specificity
+            "form.horizontal input[type="submit"]"                                                                     
+ 240:1   ✖  Expected selector "input[type="submit"]" to come before selector "form.vertical   no-descending-specificity
+            input[type="submit"]"                                                                                      
+ 241:3   ✖  Unexpected unknown at-rule "@include"                                             at-rule-no-unknown       
+ 247:1   ✖  Expected selector "input[type="submit"]" to come before selector                  no-descending-specificity
+            "form.horizontal input[type="submit"]"                                                                     
+ 247:1   ✖  Expected selector "input[type="submit"]" to come before selector "form.vertical   no-descending-specificity
+            input[type="submit"]"                                                                                      
+ 256:3   ✖  Unexpected unknown at-rule "@include"                                             at-rule-no-unknown       
+ 265:21  ✖  Unexpected unknown function "lighten"                                             function-no-unknown      
+ 271:21  ✖  Unexpected unknown function "lighten"                                             function-no-unknown      
+ 277:21  ✖  Unexpected unknown function "lighten"                                             function-no-unknown      
+
+src/sass/styles/_base_grid.scss
+ 34:3  ✖  Unknown word  CssSyntaxError
+
+src/sass/styles/_base_links.scss
+ 7:3  ✖  Unexpected unknown at-rule "@include"  at-rule-no-unknown
+
+src/sass/styles/_base_lists.scss
+ 63:1  ✖  Expected selector "li" to come before selector "ol > li"  no-descending-specificity
+ 74:4  ✖  Unexpected empty block                                    block-no-empty           
+
+src/sass/styles/_base_tables.scss
+ 29:15  ✖  Unexpected unknown function "darken"   function-no-unknown
+ 37:3   ✖  Unexpected unknown at-rule "@include"  at-rule-no-unknown 
+
+src/sass/styles/_base_typography.scss
+ 61:8   ✖  Unexpected unknown function "-"  function-no-unknown
+ 65:11  ✖  Unexpected unknown function "-"  function-no-unknown
+
+src/sass/styles/_cellular-animations.scss
+  72:1   ✖  Unexpected unknown at-rule "@mixin"      at-rule-no-unknown    
+  97:1   ✖  Unexpected unknown at-rule "@mixin"      at-rule-no-unknown    
+  98:14  ✖  Expected keyframe name to be kebab-case  keyframes-name-pattern
+ 111:14  ✖  Expected keyframe name to be kebab-case  keyframes-name-pattern
+ 127:1   ✖  Unexpected unknown at-rule "@mixin"      at-rule-no-unknown    
+ 154:1   ✖  Unexpected unknown at-rule "@mixin"      at-rule-no-unknown    
+
+src/sass/styles/_cellular-decor.scss
+ 18:6  ✖  Unknown word  CssSyntaxError
+
+src/sass/styles/_cellular-grid-flex.scss
+ 7:3  ✖  Unknown word  CssSyntaxError
+
+src/sass/styles/_cellular-grid-float.scss
+ 27:3  ✖  Unknown word  CssSyntaxError
+
+src/sass/styles/_cellular-grid.scss
+ 24:5   ✖  Unexpected unknown at-rule "@include"  at-rule-no-unknown
+ 36:11  ✖  Unexpected empty block                 block-no-empty    
+ 81:1   ✖  Unexpected unknown at-rule "@include"  at-rule-no-unknown
+ 99:1   ✖  Unexpected unknown at-rule "@include"  at-rule-no-unknown
+
+src/sass/styles/_cellular-positioning.scss
+ 11:3   ✖  Unexpected unknown at-rule "@include"  at-rule-no-unknown 
+ 31:3   ✖  Unexpected unknown at-rule "@include"  at-rule-no-unknown 
+ 33:31  ✖  Unexpected unknown function "unquote"  function-no-unknown
+
+src/sass/styles/_region-content.scss
+ 13:10  ✖  Unexpected empty block  block-no-empty
+ 16:14  ✖  Unexpected empty block  block-no-empty
+ 19:17  ✖  Unexpected empty block  block-no-empty
+
+src/sass/styles/_region-sidebar.scss
+ 10:10  ✖  Unexpected empty block  block-no-empty
+
+src/sass/styles/_region-wrappers.scss
+ 7:3  ✖  Unexpected unknown at-rule "@if"  at-rule-no-unknown
+
+src/sass/styles/__decor.scss
+  6:1  ✖  Expected class selector to be kebab-case  selector-class-pattern
+ 11:1  ✖  Expected class selector to be kebab-case  selector-class-pattern
+ 48:3  ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown    
+ 54:3  ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown    
+
+src/sass/styles/__layout.scss
+ 11:4  ✖  Expected class selector to be kebab-case  selector-class-pattern
+
+src/sass/styles/__logo.scss
+ 14:3  ✖  Unexpected unknown at-rule "@if"  at-rule-no-unknown
+
+src/sass/styles/___index.scss
+ 22:1  ✖  Unknown word  CssSyntaxError
+
+src/sass/_variables/_addons.scss
+  9:17  ✖  Unexpected unknown function "lighten"  function-no-unknown             
+ 10:16  ✖  Unexpected unknown function "darken"   function-no-unknown             
+ 14:17  ✖  Unexpected unknown function "lighten"  function-no-unknown             
+ 15:16  ✖  Unexpected unknown function "darken"   function-no-unknown             
+ 19:17  ✖  Unexpected unknown function "lighten"  function-no-unknown             
+ 20:16  ✖  Unexpected unknown function "darken"   function-no-unknown             
+ 22:23  ✖  Unexpected unknown function "lighten"  function-no-unknown             
+ 23:22  ✖  Unexpected unknown function "darken"   function-no-unknown             
+ 25:1   ✖  Unexpected double-slash CSS comment    no-invalid-double-slash-comments
+ 35:1   ✖  Unexpected unknown at-rule "@each"     at-rule-no-unknown              
+ 37:11  ✖  Unexpected unknown function "append"   function-no-unknown             
+ 37:26  ✖  Unexpected unknown function "unquote"  function-no-unknown             
+ 38:13  ✖  Unexpected unknown function "append"   function-no-unknown             
+ 38:30  ✖  Unexpected unknown function "unquote"  function-no-unknown             
+ 44:17  ✖  Unexpected unknown function "unquote"  function-no-unknown             
+ 44:17  ✖  Unexpected unknown function "unquote"  function-no-unknown             
+
+src/sass/_variables/_style-dictionary-extend.scss
+ 16:12  ✖  Unexpected unknown function "lighten"  function-no-unknown
+ 17:11  ✖  Unexpected unknown function "darken"   function-no-unknown
+ 19:12  ✖  Unexpected unknown function "lighten"  function-no-unknown
+ 20:11  ✖  Unexpected unknown function "darken"   function-no-unknown
+ 22:12  ✖  Unexpected unknown function "lighten"  function-no-unknown
+ 23:11  ✖  Unexpected unknown function "darken"   function-no-unknown
+ 25:12  ✖  Unexpected unknown function "lighten"  function-no-unknown
+ 26:11  ✖  Unexpected unknown function "lighten"  function-no-unknown
+
+src/sass/_variables/_style-dictionary.scss
+ 84:6  ✖  Unknown word  CssSyntaxError
+
+src/sass/components/cellular-ui/_cellular.scss
+ 12:16  ✖  Unexpected unknown function "darken"                                               function-no-unknown      
+ 20:3   ✖  Expected class selector to be kebab-case                                           selector-class-pattern   
+ 21:3   ✖  Expected class selector to be kebab-case                                           selector-class-pattern   
+ 22:3   ✖  Expected class selector to be kebab-case                                           selector-class-pattern   
+ 23:3   ✖  Expected class selector to be kebab-case                                           selector-class-pattern   
+ 38:7   ✖  Unexpected unknown at-rule "@include"                                              at-rule-no-unknown       
+ 64:11  ✖  Expected selector ".cellular .jAccordion .title a:focus" to come before selector   no-descending-specificity
+           ".cellular .jAccordion .title a:visited:active"                                                             
+ 64:11  ✖  Expected selector ".cellular .jAccordion .title a:focus" to come before selector   no-descending-specificity
+           ".cellular .jBlocklink .title a:visited:active"                                                             
+ 64:11  ✖  Expected selector ".cellular .jAccordion .title a:focus" to come before selector   no-descending-specificity
+           ".cellular .jMmenu .title a:visited:active"                                                                 
+ 64:11  ✖  Expected selector ".cellular .jAccordion .title a:focus" to come before selector   no-descending-specificity
+           ".cellular .jTabs .title a:visited:active"                                                                  
+ 64:11  ✖  Expected selector ".cellular .jBlocklink .title a:focus" to come before selector   no-descending-specificity
+           ".cellular .jAccordion .title a:visited:active"                                                             
+ 64:11  ✖  Expected selector ".cellular .jBlocklink .title a:focus" to come before selector   no-descending-specificity
+           ".cellular .jBlocklink .title a:visited:active"                                                             
+ 64:11  ✖  Expected selector ".cellular .jBlocklink .title a:focus" to come before selector   no-descending-specificity
+           ".cellular .jMmenu .title a:visited:active"                                                                 
+ 64:11  ✖  Expected selector ".cellular .jBlocklink .title a:focus" to come before selector   no-descending-specificity
+           ".cellular .jTabs .title a:visited:active"                                                                  
+ 64:11  ✖  Expected selector ".cellular .jMmenu .title a:focus" to come before selector       no-descending-specificity
+           ".cellular .jAccordion .title a:visited:active"                                                             
+ 64:11  ✖  Expected selector ".cellular .jMmenu .title a:focus" to come before selector       no-descending-specificity
+           ".cellular .jBlocklink .title a:visited:active"                                                             
+ 64:11  ✖  Expected selector ".cellular .jMmenu .title a:focus" to come before selector       no-descending-specificity
+           ".cellular .jMmenu .title a:visited:active"                                                                 
+ 64:11  ✖  Expected selector ".cellular .jMmenu .title a:focus" to come before selector       no-descending-specificity
+           ".cellular .jTabs .title a:visited:active"                                                                  
+ 64:11  ✖  Expected selector ".cellular .jTabs .title a:focus" to come before selector        no-descending-specificity
+           ".cellular .jAccordion .title a:visited:active"                                                             
+ 64:11  ✖  Expected selector ".cellular .jTabs .title a:focus" to come before selector        no-descending-specificity
+           ".cellular .jBlocklink .title a:visited:active"                                                             
+ 64:11  ✖  Expected selector ".cellular .jTabs .title a:focus" to come before selector        no-descending-specificity
+           ".cellular .jMmenu .title a:visited:active"                                                                 
+ 64:11  ✖  Expected selector ".cellular .jTabs .title a:focus" to come before selector        no-descending-specificity
+           ".cellular .jTabs .title a:visited:active"                                                                  
+ 64:11  ✖  Expected selector ".cellular .jAccordion .title a:hover" to come before selector   no-descending-specificity
+           ".cellular .jAccordion .title a:visited:active"                                                             
+ 64:11  ✖  Expected selector ".cellular .jAccordion .title a:hover" to come before selector   no-descending-specificity
+           ".cellular .jBlocklink .title a:visited:active"                                                             
+ 64:11  ✖  Expected selector ".cellular .jAccordion .title a:hover" to come before selector   no-descending-specificity
+           ".cellular .jMmenu .title a:visited:active"                                                                 
+ 64:11  ✖  Expected selector ".cellular .jAccordion .title a:hover" to come before selector   no-descending-specificity
+           ".cellular .jTabs .title a:visited:active"                                                                  
+ 64:11  ✖  Expected selector ".cellular .jAccordion .title a:hover" to come before selector   no-descending-specificity
+           ".cellular .jAccordion .title a:visited:focus"                                                              
+ 64:11  ✖  Expected selector ".cellular .jAccordion .title a:hover" to come before selector   no-descending-specificity
+           ".cellular .jBlocklink .title a:visited:focus"                                                              
+ 64:11  ✖  Expected selector ".cellular .jAccordion .title a:hover" to come before selector   no-descending-specificity
+           ".cellular .jMmenu .title a:visited:focus"                                                                  
+ 64:11  ✖  Expected selector ".cellular .jAccordion .title a:hover" to come before selector   no-descending-specificity
+           ".cellular .jTabs .title a:visited:focus"                                                                   
+ 64:11  ✖  Expected selector ".cellular .jBlocklink .title a:hover" to come before selector   no-descending-specificity
+           ".cellular .jAccordion .title a:visited:active"                                                             
+ 64:11  ✖  Expected selector ".cellular .jBlocklink .title a:hover" to come before selector   no-descending-specificity
+           ".cellular .jBlocklink .title a:visited:active"                                                             
+ 64:11  ✖  Expected selector ".cellular .jBlocklink .title a:hover" to come before selector   no-descending-specificity
+           ".cellular .jMmenu .title a:visited:active"                                                                 
+ 64:11  ✖  Expected selector ".cellular .jBlocklink .title a:hover" to come before selector   no-descending-specificity
+           ".cellular .jTabs .title a:visited:active"                                                                  
+ 64:11  ✖  Expected selector ".cellular .jBlocklink .title a:hover" to come before selector   no-descending-specificity
+           ".cellular .jAccordion .title a:visited:focus"                                                              
+ 64:11  ✖  Expected selector ".cellular .jBlocklink .title a:hover" to come before selector   no-descending-specificity
+           ".cellular .jBlocklink .title a:visited:focus"                                                              
+ 64:11  ✖  Expected selector ".cellular .jBlocklink .title a:hover" to come before selector   no-descending-specificity
+           ".cellular .jMmenu .title a:visited:focus"                                                                  
+ 64:11  ✖  Expected selector ".cellular .jBlocklink .title a:hover" to come before selector   no-descending-specificity
+           ".cellular .jTabs .title a:visited:focus"                                                                   
+ 64:11  ✖  Expected selector ".cellular .jMmenu .title a:hover" to come before selector       no-descending-specificity
+           ".cellular .jAccordion .title a:visited:active"                                                             
+ 64:11  ✖  Expected selector ".cellular .jMmenu .title a:hover" to come before selector       no-descending-specificity
+           ".cellular .jBlocklink .title a:visited:active"                                                             
+ 64:11  ✖  Expected selector ".cellular .jMmenu .title a:hover" to come before selector       no-descending-specificity
+           ".cellular .jMmenu .title a:visited:active"                                                                 
+ 64:11  ✖  Expected selector ".cellular .jMmenu .title a:hover" to come before selector       no-descending-specificity
+           ".cellular .jTabs .title a:visited:active"                                                                  
+ 64:11  ✖  Expected selector ".cellular .jMmenu .title a:hover" to come before selector       no-descending-specificity
+           ".cellular .jAccordion .title a:visited:focus"                                                              
+ 64:11  ✖  Expected selector ".cellular .jMmenu .title a:hover" to come before selector       no-descending-specificity
+           ".cellular .jBlocklink .title a:visited:focus"                                                              
+ 64:11  ✖  Expected selector ".cellular .jMmenu .title a:hover" to come before selector       no-descending-specificity
+           ".cellular .jMmenu .title a:visited:focus"                                                                  
+ 64:11  ✖  Expected selector ".cellular .jMmenu .title a:hover" to come before selector       no-descending-specificity
+           ".cellular .jTabs .title a:visited:focus"                                                                   
+ 64:11  ✖  Expected selector ".cellular .jTabs .title a:hover" to come before selector        no-descending-specificity
+           ".cellular .jAccordion .title a:visited:active"                                                             
+ 64:11  ✖  Expected selector ".cellular .jTabs .title a:hover" to come before selector        no-descending-specificity
+           ".cellular .jBlocklink .title a:visited:active"                                                             
+ 64:11  ✖  Expected selector ".cellular .jTabs .title a:hover" to come before selector        no-descending-specificity
+           ".cellular .jMmenu .title a:visited:active"                                                                 
+ 64:11  ✖  Expected selector ".cellular .jTabs .title a:hover" to come before selector        no-descending-specificity
+           ".cellular .jTabs .title a:visited:active"                                                                  
+ 64:11  ✖  Expected selector ".cellular .jTabs .title a:hover" to come before selector        no-descending-specificity
+           ".cellular .jAccordion .title a:visited:focus"                                                              
+ 64:11  ✖  Expected selector ".cellular .jTabs .title a:hover" to come before selector        no-descending-specificity
+           ".cellular .jBlocklink .title a:visited:focus"                                                              
+ 64:11  ✖  Expected selector ".cellular .jTabs .title a:hover" to come before selector        no-descending-specificity
+           ".cellular .jMmenu .title a:visited:focus"                                                                  
+ 64:11  ✖  Expected selector ".cellular .jTabs .title a:hover" to come before selector        no-descending-specificity
+           ".cellular .jTabs .title a:visited:focus"                                                                   
+
+src/sass/components/cellular-ui/_jAccordion.scss
+  6:1  ✖  Expected class selector to be kebab-case  selector-class-pattern
+ 12:5  ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown    
+
+src/sass/components/cellular-ui/_jCard.scss
+  5:1   ✖  Expected class selector to be kebab-case                                           selector-class-pattern   
+  6:3   ✖  Unexpected unknown at-rule "@include"                                              at-rule-no-unknown       
+ 12:1   ✖  Expected class selector to be kebab-case                                           selector-class-pattern   
+ 13:3   ✖  Unexpected unknown at-rule "@include"                                              at-rule-no-unknown       
+ 29:5   ✖  Unexpected unknown at-rule "@include"                                              at-rule-no-unknown       
+ 42:3   ✖  Expected selector ".jCard-wrap a" to come before selector ".jCard-wrap .title a"   no-descending-specificity
+ 42:3   ✖  Expected selector ".jCard-wrap a" to come before selector ".jCard-wrap .title      no-descending-specificity
+           a:visited"                                                                                                  
+ 46:12  ✖  Unexpected unknown function "lighten"                                              function-no-unknown      
+ 62:5   ✖  Expected class selector to be kebab-case                                           selector-class-pattern   
+ 75:5   ✖  Expected selector ".jCard-wrap.active a" to come before selector ".jCard-wrap      no-descending-specificity
+           .title a:visited"                                                                                           
+ 75:5   ✖  Expected selector ".jCard-wrap.active a" to come before selector                   no-descending-specificity
+           ".jCard-wrap.active .title a"                                                                               
+ 75:5   ✖  Expected selector ".jCard-wrap.active a" to come before selector                   no-descending-specificity
+           ".jCard-wrap:active .title a"                                                                               
+ 75:5   ✖  Expected selector ".jCard-wrap.active a" to come before selector                   no-descending-specificity
+           ".jCard-wrap:focus .title a"                                                                                
+ 75:5   ✖  Expected selector ".jCard-wrap.active a" to come before selector                   no-descending-specificity
+           ".jCard-wrap:hover .title a"                                                                                
+ 75:5   ✖  Expected selector ".jCard-wrap.active a" to come before selector                   no-descending-specificity
+           ".jCard-wrap.active .title a:visited"                                                                       
+ 75:5   ✖  Expected selector ".jCard-wrap.active a" to come before selector                   no-descending-specificity
+           ".jCard-wrap:active .title a:visited"                                                                       
+ 75:5   ✖  Expected selector ".jCard-wrap.active a" to come before selector                   no-descending-specificity
+           ".jCard-wrap:focus .title a:visited"                                                                        
+ 75:5   ✖  Expected selector ".jCard-wrap.active a" to come before selector                   no-descending-specificity
+           ".jCard-wrap:hover .title a:visited"                                                                        
+ 75:5   ✖  Expected selector ".jCard-wrap:active a" to come before selector ".jCard-wrap      no-descending-specificity
+           .title a:visited"                                                                                           
+ 75:5   ✖  Expected selector ".jCard-wrap:active a" to come before selector                   no-descending-specificity
+           ".jCard-wrap.active .title a"                                                                               
+ 75:5   ✖  Expected selector ".jCard-wrap:active a" to come before selector                   no-descending-specificity
+           ".jCard-wrap:active .title a"                                                                               
+ 75:5   ✖  Expected selector ".jCard-wrap:active a" to come before selector                   no-descending-specificity
+           ".jCard-wrap:focus .title a"                                                                                
+ 75:5   ✖  Expected selector ".jCard-wrap:active a" to come before selector                   no-descending-specificity
+           ".jCard-wrap:hover .title a"                                                                                
+ 75:5   ✖  Expected selector ".jCard-wrap:active a" to come before selector                   no-descending-specificity
+           ".jCard-wrap.active .title a:visited"                                                                       
+ 75:5   ✖  Expected selector ".jCard-wrap:active a" to come before selector                   no-descending-specificity
+           ".jCard-wrap:active .title a:visited"                                                                       
+ 75:5   ✖  Expected selector ".jCard-wrap:active a" to come before selector                   no-descending-specificity
+           ".jCard-wrap:focus .title a:visited"                                                                        
+ 75:5   ✖  Expected selector ".jCard-wrap:active a" to come before selector                   no-descending-specificity
+           ".jCard-wrap:hover .title a:visited"                                                                        
+ 75:5   ✖  Expected selector ".jCard-wrap:focus a" to come before selector ".jCard-wrap       no-descending-specificity
+           .title a:visited"                                                                                           
+ 75:5   ✖  Expected selector ".jCard-wrap:focus a" to come before selector                    no-descending-specificity
+           ".jCard-wrap.active .title a"                                                                               
+ 75:5   ✖  Expected selector ".jCard-wrap:focus a" to come before selector                    no-descending-specificity
+           ".jCard-wrap:active .title a"                                                                               
+ 75:5   ✖  Expected selector ".jCard-wrap:focus a" to come before selector                    no-descending-specificity
+           ".jCard-wrap:focus .title a"                                                                                
+ 75:5   ✖  Expected selector ".jCard-wrap:focus a" to come before selector                    no-descending-specificity
+           ".jCard-wrap:hover .title a"                                                                                
+ 75:5   ✖  Expected selector ".jCard-wrap:focus a" to come before selector                    no-descending-specificity
+           ".jCard-wrap.active .title a:visited"                                                                       
+ 75:5   ✖  Expected selector ".jCard-wrap:focus a" to come before selector                    no-descending-specificity
+           ".jCard-wrap:active .title a:visited"                                                                       
+ 75:5   ✖  Expected selector ".jCard-wrap:focus a" to come before selector                    no-descending-specificity
+           ".jCard-wrap:focus .title a:visited"                                                                        
+ 75:5   ✖  Expected selector ".jCard-wrap:focus a" to come before selector                    no-descending-specificity
+           ".jCard-wrap:hover .title a:visited"                                                                        
+ 75:5   ✖  Expected selector ".jCard-wrap:hover a" to come before selector ".jCard-wrap       no-descending-specificity
+           .title a:visited"                                                                                           
+ 75:5   ✖  Expected selector ".jCard-wrap:hover a" to come before selector                    no-descending-specificity
+           ".jCard-wrap.active .title a"                                                                               
+ 75:5   ✖  Expected selector ".jCard-wrap:hover a" to come before selector                    no-descending-specificity
+           ".jCard-wrap:active .title a"                                                                               
+ 75:5   ✖  Expected selector ".jCard-wrap:hover a" to come before selector                    no-descending-specificity
+           ".jCard-wrap:focus .title a"                                                                                
+ 75:5   ✖  Expected selector ".jCard-wrap:hover a" to come before selector                    no-descending-specificity
+           ".jCard-wrap:hover .title a"                                                                                
+ 75:5   ✖  Expected selector ".jCard-wrap:hover a" to come before selector                    no-descending-specificity
+           ".jCard-wrap.active .title a:visited"                                                                       
+ 75:5   ✖  Expected selector ".jCard-wrap:hover a" to come before selector                    no-descending-specificity
+           ".jCard-wrap:active .title a:visited"                                                                       
+ 75:5   ✖  Expected selector ".jCard-wrap:hover a" to come before selector                    no-descending-specificity
+           ".jCard-wrap:focus .title a:visited"                                                                        
+ 75:5   ✖  Expected selector ".jCard-wrap:hover a" to come before selector                    no-descending-specificity
+           ".jCard-wrap:hover .title a:visited"                                                                        
+
+src/sass/components/cellular-ui/_jMmenu.scss
+   6:1   ✖  Unexpected unknown at-rule "@include"                                             at-rule-no-unknown       
+  18:3   ✖  Expected class selector to be kebab-case                                          selector-class-pattern   
+  19:5   ✖  Unexpected unknown at-rule "@include"                                             at-rule-no-unknown       
+  20:5   ✖  Unexpected unknown at-rule "@include"                                             at-rule-no-unknown       
+  57:3   ✖  Expected class selector to be kebab-case                                          selector-class-pattern   
+  70:3   ✖  Expected class selector to be kebab-case                                          selector-class-pattern   
+  71:5   ✖  Unexpected unknown at-rule "@include"                                             at-rule-no-unknown       
+  96:11  ✖  Unexpected unknown at-rule "@include"                                             at-rule-no-unknown       
+  97:11  ✖  Unexpected unknown at-rule "@include"                                             at-rule-no-unknown       
+ 106:11  ✖  Unexpected unknown at-rule "@include"                                             at-rule-no-unknown       
+ 133:5   ✖  Expected selector ".cellular .jMmenu-menu a" to come before selector ".cellular   no-descending-specificity
+            .jMmenu-menu li.parent a"                                                                                  
+ 134:7   ✖  Expected selector ".cellular .jMmenu-menu a" to come before selector ".cellular   no-descending-specificity
+            .jMmenu-menu li.parent a"                                                                                  
+ 134:7   ✖  Expected selector ".cellular .jMmenu-menu a:visited" to come before selector      no-descending-specificity
+            ".cellular .jMmenu-menu li.parent a"                                                                       
+ 136:9   ✖  Unexpected unknown at-rule "@include"                                             at-rule-no-unknown       
+ 151:7   ✖  Expected selector ".cellular .jMmenu-menu a:active" to come before selector       no-descending-specificity
+            ".cellular .jMmenu-menu li.parent a"                                                                       
+ 151:7   ✖  Expected selector ".cellular .jMmenu-menu a:focus" to come before selector        no-descending-specificity
+            ".cellular .jMmenu-menu li.parent a"                                                                       
+ 151:7   ✖  Expected selector ".cellular .jMmenu-menu a:hover" to come before selector        no-descending-specificity
+            ".cellular .jMmenu-menu li.parent a"                                                                       
+ 159:5   ✖  Expected selector ".cellular .jMmenu-menu .active > a" to come before selector    no-descending-specificity
+            ".cellular .jMmenu-menu li.parent a"                                                                       
+ 182:5   ✖  Expected class selector to be kebab-case                                          selector-class-pattern   
+ 201:5   ✖  Expected class selector to be kebab-case                                          selector-class-pattern   
+ 216:5   ✖  Expected class selector to be kebab-case                                          selector-class-pattern   
+ 224:5   ✖  Expected class selector to be kebab-case                                          selector-class-pattern   
+ 230:4   ✖  Expected class selector to be kebab-case                                          selector-class-pattern   
+
+src/sass/components/cellular-ui/_jModal.scss
+  1:1   ✖  Expected class selector to be kebab-case                                           selector-class-pattern   
+  1:17  ✖  Unexpected empty block                                                             block-no-empty           
+  4:1   ✖  Expected id selector to be kebab-case                                              selector-id-pattern      
+  5:3   ✖  Unexpected unknown at-rule "@include"                                              at-rule-no-unknown       
+ 23:1   ✖  Expected class selector to be kebab-case                                           selector-class-pattern   
+ 24:3   ✖  Unexpected unknown at-rule "@include"                                              at-rule-no-unknown       
+ 32:12  ✖  Unexpected empty block                                                             block-no-empty           
+ 36:1   ✖  Expected class selector to be kebab-case                                           selector-class-pattern   
+ 37:3   ✖  Unexpected unknown at-rule "@include"                                              at-rule-no-unknown       
+ 38:3   ✖  Unexpected unknown at-rule "@include"                                              at-rule-no-unknown       
+ 57:5   ✖  Expected class selector to be kebab-case                                           selector-class-pattern   
+ 66:1   ✖  Expected selector ".jModal-close" to come before selector ".jModal-content.active  no-descending-specificity
+           .jModal-close"                                                                                              
+ 66:1   ✖  Expected class selector to be kebab-case                                           selector-class-pattern   
+ 67:3   ✖  Unexpected unknown at-rule "@include"                                              at-rule-no-unknown       
+ 76:3   ✖  Expected selector ".jModal-close:hover" to come before selector                    no-descending-specificity
+           ".jModal-content.active .jModal-close"                                                                      
+ 76:3   ✖  Expected selector ".jModal-close:focus" to come before selector                    no-descending-specificity
+           ".jModal-content.active .jModal-close"                                                                      
+ 78:17  ✖  Unexpected unknown function "lighten"                                              function-no-unknown      
+
+src/sass/components/cellular-ui/_jScrolled.scss
+ 33:3  ✖  Expected class selector to be kebab-case  selector-class-pattern
+ 42:4  ✖  Expected class selector to be kebab-case  selector-class-pattern
+ 43:4  ✖  Expected class selector to be kebab-case  selector-class-pattern
+ 44:5  ✖  Expected class selector to be kebab-case  selector-class-pattern
+
+src/sass/components/cellular-ui/_jScrolli.scss
+  10:1   ✖  Unexpected unknown at-rule "@mixin"                                               at-rule-no-unknown       
+  14:1   ✖  Expected class selector to be kebab-case                                          selector-class-pattern   
+  15:3   ✖  Unexpected unknown at-rule "@include"                                             at-rule-no-unknown       
+  22:10  ✖  Expected class selector to be kebab-case                                          selector-class-pattern   
+  26:1   ✖  Expected class selector to be kebab-case                                          selector-class-pattern   
+  47:5   ✖  Expected class selector to be kebab-case                                          selector-class-pattern   
+  51:5   ✖  Expected class selector to be kebab-case                                          selector-class-pattern   
+  51:23  ✖  Unexpected empty block                                                            block-no-empty           
+  57:5   ✖  Expected class selector to be kebab-case                                          selector-class-pattern   
+  65:1   ✖  Expected class selector to be kebab-case                                          selector-class-pattern   
+  66:3   ✖  Unexpected unknown at-rule "@include"                                             at-rule-no-unknown       
+  91:5   ✖  Expected class selector to be kebab-case                                          selector-class-pattern   
+  97:3   ✖  Expected selector ".jScrolli-slide .jScrolli-slide-content" to come before        no-descending-specificity
+            selector ".jScrolli-slide.active .jScrolli-slide-content"                                                  
+  97:3   ✖  Expected class selector to be kebab-case                                          selector-class-pattern   
+  98:5   ✖  Unexpected unknown at-rule "@include"                                             at-rule-no-unknown       
+ 108:7   ✖  Unexpected unknown at-rule "@include"                                             at-rule-no-unknown       
+ 117:7   ✖  Unexpected unknown at-rule "@include"                                             at-rule-no-unknown       
+ 123:3   ✖  Expected selector ".jScrolli-slide p" to come before selector                     no-descending-specificity
+            ".jScrolli-wrap.transition .jScrolli-caption p"                                                            
+ 129:1   ✖  Expected class selector to be kebab-case                                          selector-class-pattern   
+ 135:1   ✖  Expected selector ".jScrolli-caption" to come before selector                     no-descending-specificity
+            ".jScrolli-wrap.active .jScrolli-caption"                                                                  
+ 135:1   ✖  Expected selector ".jScrolli-caption" to come before selector                     no-descending-specificity
+            ".jScrolli-wrap.transition .jScrolli-caption"                                                              
+ 135:1   ✖  Expected class selector to be kebab-case                                          selector-class-pattern   
+ 137:3   ✖  Unexpected unknown at-rule "@include"                                             at-rule-no-unknown       
+ 148:3   ✖  Expected selector ".jScrolli-caption p" to come before selector                   no-descending-specificity
+            ".jScrolli-wrap.transition .jScrolli-caption p"                                                            
+ 149:5   ✖  Unexpected unknown at-rule "@include"                                             at-rule-no-unknown       
+ 159:1   ✖  Expected selector ".jScrolli-control" to come before selector                     no-descending-specificity
+            ".jScrolli-wrap.active .jScrolli-control"                                                                  
+ 159:1   ✖  Expected class selector to be kebab-case                                          selector-class-pattern   
+ 160:3   ✖  Unexpected unknown at-rule "@include"                                             at-rule-no-unknown       
+ 173:25  ✖  Expected quotes around "url" function argument                                    function-url-quotes      
+ 174:25  ✖  Expected quotes around "url" function argument                                    function-url-quotes      
+ 188:3   ✖  Expected selector ".jScrolli-control.prev" to come before selector                no-descending-specificity
+            ".jScrolli-control.prev:hover"                                                                             
+ 188:3   ✖  Expected selector ".jScrolli-control.prev" to come before selector                no-descending-specificity
+            ".jScrolli-control.prev:focus"                                                                             
+ 193:3   ✖  Expected selector ".jScrolli-control.next" to come before selector                no-descending-specificity
+            ".jScrolli-control.next:hover"                                                                             
+ 193:3   ✖  Expected selector ".jScrolli-control.next" to come before selector                no-descending-specificity
+            ".jScrolli-control.next:focus"                                                                             
+ 218:1   ✖  Expected class selector to be kebab-case                                          selector-class-pattern   
+ 240:1   ✖  Expected class selector to be kebab-case                                          selector-class-pattern   
+ 241:3   ✖  Unexpected unknown at-rule "@include"                                             at-rule-no-unknown       
+ 256:19  ✖  Unexpected unknown function "darken"                                              function-no-unknown      
+ 266:3   ✖  Expected selector ".jScrolli-marker a" to come before selector ".jScrolli-slide   no-descending-specificity
+            .title a"                                                                                                  
+ 266:3   ✖  Expected selector ".jScrolli-marker a" to come before selector ".jScrolli-slide   no-descending-specificity
+            .title a:visited"                                                                                          
+ 266:3   ✖  Expected selector ".jScrolli-marker a" to come before selector ".jScrolli-slide   no-descending-specificity
+            .title a:active"                                                                                           
+ 266:3   ✖  Expected selector ".jScrolli-marker a" to come before selector ".jScrolli-slide   no-descending-specificity
+            .title a:hover"                                                                                            
+ 266:3   ✖  Expected selector ".jScrolli-marker a" to come before selector ".jScrolli-slide   no-descending-specificity
+            .title a:focus"                                                                                            
+
+src/sass/components/cellular-ui/_jScrollindicator.scss
+  6:1   ✖  Expected class selector to be kebab-case  selector-class-pattern
+  7:16  ✖  Unexpected empty block                    block-no-empty        
+ 10:14  ✖  Unexpected empty block                    block-no-empty        
+ 14:1   ✖  Expected class selector to be kebab-case  selector-class-pattern
+ 14:29  ✖  Unexpected empty block                    block-no-empty        
+
+src/sass/components/cellular-ui/_jSocial.scss
+ 41:11  ✖  Unknown word  CssSyntaxError
+
+src/sass/components/cellular-ui/_jTabs.scss
+ 6:1  ✖  Expected class selector to be kebab-case  selector-class-pattern
+
+src/sass/components/cellular-ui/_jTooltip.scss
+  5:17  ✖  Unexpected empty comment                  comment-no-empty      
+  6:1   ✖  Expected class selector to be kebab-case  selector-class-pattern
+ 10:1   ✖  Expected class selector to be kebab-case  selector-class-pattern
+ 23:1   ✖  Expected class selector to be kebab-case  selector-class-pattern
+ 24:3   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown    
+ 40:5   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown    
+
+src/sass/components/cellular-ui/_jZoom.scss
+  1:1  ✖  Expected class selector to be kebab-case  selector-class-pattern
+  1:8  ✖  Unexpected empty block                    block-no-empty        
+  4:1  ✖  Expected class selector to be kebab-case  selector-class-pattern
+ 10:1  ✖  Expected class selector to be kebab-case  selector-class-pattern
+ 20:1  ✖  Expected class selector to be kebab-case  selector-class-pattern
+
+src/sass/_libs/cellular-mixins/_animations.scss
+   1:1   ✖  Unexpected unknown at-rule "@mixin"      at-rule-no-unknown    
+  23:1   ✖  Unexpected unknown at-rule "@mixin"      at-rule-no-unknown    
+  39:1   ✖  Unexpected unknown at-rule "@mixin"      at-rule-no-unknown    
+  52:1   ✖  Unexpected unknown at-rule "@mixin"      at-rule-no-unknown    
+  64:1   ✖  Unexpected unknown at-rule "@mixin"      at-rule-no-unknown    
+  78:1   ✖  Unexpected unknown at-rule "@mixin"      at-rule-no-unknown    
+ 103:1   ✖  Unexpected unknown at-rule "@mixin"      at-rule-no-unknown    
+ 104:14  ✖  Expected keyframe name to be kebab-case  keyframes-name-pattern
+ 117:14  ✖  Expected keyframe name to be kebab-case  keyframes-name-pattern
+ 133:1   ✖  Unexpected unknown at-rule "@mixin"      at-rule-no-unknown    
+ 160:1   ✖  Unexpected unknown at-rule "@mixin"      at-rule-no-unknown    
+
+src/sass/_libs/cellular-mixins/_base_lists.scss
+ 11:5  ✖  Unexpected unknown function "linear-$color-hilight"       function-no-unknown      
+ 63:1  ✖  Expected selector "li" to come before selector "ol > li"  no-descending-specificity
+ 74:4  ✖  Unexpected empty block                                    block-no-empty           
+
+src/sass/_libs/cellular-mixins/_border-radius.scss
+ 1:1  ✖  Unexpected unknown at-rule "@mixin"  at-rule-no-unknown
+ 3:3  ✖  Unexpected unknown at-rule "@if"     at-rule-no-unknown
+
+src/sass/_libs/cellular-mixins/_box-shadow.scss
+ 1:1  ✖  Unexpected unknown at-rule "@mixin"  at-rule-no-unknown
+ 3:3  ✖  Unexpected unknown at-rule "@if"     at-rule-no-unknown
+
+src/sass/_libs/cellular-mixins/_button.scss
+  1:1   ✖  Unexpected unknown at-rule "@mixin"    at-rule-no-unknown 
+ 41:7   ✖  Unexpected unknown at-rule "@if"       at-rule-no-unknown 
+ 42:9   ✖  Unexpected unknown at-rule "@include"  at-rule-no-unknown 
+ 45:7   ✖  Unexpected unknown at-rule "@else"     at-rule-no-unknown 
+ 46:9   ✖  Unexpected unknown at-rule "@include"  at-rule-no-unknown 
+ 53:5   ✖  Unexpected unknown at-rule "@if"       at-rule-no-unknown 
+ 54:7   ✖  Unexpected unknown at-rule "@include"  at-rule-no-unknown 
+ 55:7   ✖  Unexpected unknown at-rule "@include"  at-rule-no-unknown 
+ 58:5   ✖  Unexpected unknown at-rule "@else"     at-rule-no-unknown 
+ 59:7   ✖  Unexpected unknown at-rule "@include"  at-rule-no-unknown 
+ 60:7   ✖  Unexpected unknown at-rule "@include"  at-rule-no-unknown 
+ 64:3   ✖  Unexpected unknown at-rule "@if"       at-rule-no-unknown 
+ 65:14  ✖  Unexpected unknown function "lighten"  function-no-unknown
+ 68:3   ✖  Unexpected unknown at-rule "@if"       at-rule-no-unknown 
+ 69:14  ✖  Unexpected unknown function "darken"   function-no-unknown
+ 72:3   ✖  Unexpected unknown at-rule "@if"       at-rule-no-unknown 
+ 73:19  ✖  Unexpected unknown function "lighten"  function-no-unknown
+ 76:3   ✖  Unexpected unknown at-rule "@if"       at-rule-no-unknown 
+ 77:19  ✖  Unexpected unknown function "darken"   function-no-unknown
+
+src/sass/_libs/cellular-mixins/_checkbox.scss
+  1:1   ✖  Unexpected unknown at-rule "@mixin"   at-rule-no-unknown 
+ 31:21  ✖  Unexpected unknown function "darken"  function-no-unknown
+
+src/sass/_libs/cellular-mixins/_clear.scss
+ 1:1  ✖  Unexpected unknown at-rule "@mixin"  at-rule-no-unknown
+
+src/sass/_libs/cellular-mixins/_contrast.scss
+  1:1   ✖  Unexpected unknown at-rule "@mixin"    at-rule-no-unknown 
+  2:3   ✖  Unexpected unknown at-rule "@if"       at-rule-no-unknown 
+  3:12  ✖  Unexpected unknown function "lighten"  function-no-unknown
+  6:14  ✖  Unexpected unknown function "lighten"  function-no-unknown
+ 10:3   ✖  Unexpected unknown at-rule "@else"     at-rule-no-unknown 
+ 11:12  ✖  Unexpected unknown function "darken"   function-no-unknown
+ 14:14  ✖  Unexpected unknown function "darken"   function-no-unknown
+
+src/sass/_libs/cellular-mixins/_gradient.scss
+  1:1   ✖  Unexpected double-slash CSS comment    no-invalid-double-slash-comments
+  9:3   ✖  Unexpected unknown at-rule "@if"       at-rule-no-unknown              
+ 10:15  ✖  Unexpected unknown function "darken"   function-no-unknown             
+ 13:3   ✖  Unexpected unknown at-rule "@else"     at-rule-no-unknown              
+ 14:15  ✖  Unexpected unknown function "lighten"  function-no-unknown             
+ 17:3   ✖  Unexpected unknown at-rule "@if"       at-rule-no-unknown              
+ 26:3   ✖  Unexpected unknown at-rule "@else"     at-rule-no-unknown              
+
+src/sass/_libs/cellular-mixins/_icon.scss
+ 1:1   ✖  Unexpected unknown at-rule "@mixin"    at-rule-no-unknown 
+ 2:14  ✖  Unexpected unknown function "unquote"  function-no-unknown
+ 3:14  ✖  Unexpected unknown function "unquote"  function-no-unknown
+
+src/sass/_libs/cellular-mixins/_link.scss
+  1:1   ✖  Unexpected unknown at-rule "@mixin"    at-rule-no-unknown 
+  5:12  ✖  Unexpected unknown function "darken"   function-no-unknown
+ 11:12  ✖  Unexpected unknown function "lighten"  function-no-unknown
+
+src/sass/_libs/cellular-mixins/_loaders.scss
+  17:1   ✖  Unexpected unknown at-rule "@mixin"       at-rule-no-unknown 
+  24:3   ✖  Unexpected empty comment                  comment-no-empty   
+  32:12  ✖  Unexpected unknown function "-"           function-no-unknown
+  40:5   ✖  Unexpected unknown at-rule "@if"          at-rule-no-unknown 
+  46:5   ✖  Unexpected unknown at-rule "@if"          at-rule-no-unknown 
+  47:7   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+  50:5   ✖  Unexpected unknown at-rule "@if"          at-rule-no-unknown 
+  51:7   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+  54:5   ✖  Unexpected unknown at-rule "@if"          at-rule-no-unknown 
+  55:7   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+  58:5   ✖  Unexpected unknown at-rule "@if"          at-rule-no-unknown 
+  59:7   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+  62:5   ✖  Unexpected unknown at-rule "@if"          at-rule-no-unknown 
+  63:7   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+  66:5   ✖  Unexpected unknown at-rule "@if"          at-rule-no-unknown 
+  67:7   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+  70:5   ✖  Unexpected unknown at-rule "@if"          at-rule-no-unknown 
+  71:7   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+  74:5   ✖  Unexpected unknown at-rule "@if"          at-rule-no-unknown 
+  75:7   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+  78:5   ✖  Unexpected unknown at-rule "@if"          at-rule-no-unknown 
+  79:7   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+  82:5   ✖  Unexpected unknown at-rule "@if"          at-rule-no-unknown 
+  83:7   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+  86:5   ✖  Unexpected unknown at-rule "@if"          at-rule-no-unknown 
+  87:7   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+  92:1   ✖  Unexpected unknown at-rule "@mixin"       at-rule-no-unknown 
+  95:3   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+  97:3   ✖  Unexpected empty comment                  comment-no-empty   
+ 133:1   ✖  Unexpected unknown at-rule "@mixin"       at-rule-no-unknown 
+ 137:3   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+ 142:3   ✖  Unexpected empty comment                  comment-no-empty   
+ 172:1   ✖  Unexpected unknown at-rule "@mixin"       at-rule-no-unknown 
+ 176:3   ✖  Unexpected empty comment                  comment-no-empty   
+ 180:25  ✖  Unexpected unknown function "darken"      function-no-unknown
+ 195:27  ✖  Unexpected unknown function "darken"      function-no-unknown
+ 201:28  ✖  Unexpected unknown function "adjust-hue"  function-no-unknown
+ 207:28  ✖  Unexpected unknown function "adjust-hue"  function-no-unknown
+ 211:1   ✖  Unexpected unknown at-rule "@mixin"       at-rule-no-unknown 
+ 216:3   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+ 218:3   ✖  Unexpected empty comment                  comment-no-empty   
+ 251:1   ✖  Unexpected unknown at-rule "@mixin"       at-rule-no-unknown 
+ 259:3   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+ 263:3   ✖  Unexpected empty comment                  comment-no-empty   
+ 267:31  ✖  Unexpected unknown function "darken"      function-no-unknown
+ 295:1   ✖  Unexpected unknown at-rule "@mixin"       at-rule-no-unknown 
+ 303:3   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+ 305:3   ✖  Unexpected empty comment                  comment-no-empty   
+ 341:1   ✖  Unexpected unknown at-rule "@mixin"       at-rule-no-unknown 
+ 345:3   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+ 347:3   ✖  Unexpected empty comment                  comment-no-empty   
+ 357:14  ✖  Unexpected empty block                    block-no-empty     
+ 360:15  ✖  Unexpected empty block                    block-no-empty     
+ 374:1   ✖  Unexpected unknown at-rule "@mixin"       at-rule-no-unknown 
+ 380:3   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+ 382:3   ✖  Unexpected empty comment                  comment-no-empty   
+ 399:1   ✖  Unexpected unknown at-rule "@mixin"       at-rule-no-unknown 
+ 402:3   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+ 404:3   ✖  Unexpected empty comment                  comment-no-empty   
+ 418:14  ✖  Unexpected empty block                    block-no-empty     
+ 421:15  ✖  Unexpected empty block                    block-no-empty     
+ 424:14  ✖  Unexpected empty block                    block-no-empty     
+ 429:1   ✖  Unexpected unknown at-rule "@mixin"       at-rule-no-unknown 
+ 435:3   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+ 437:3   ✖  Unexpected empty comment                  comment-no-empty   
+
+src/sass/_libs/cellular-mixins/_mediaquery.scss
+ 2:12  ✖  Unknown word  CssSyntaxError
+
+src/sass/_libs/cellular-mixins/_overlay.scss
+  1:1   ✖  Unexpected unknown at-rule "@mixin"              at-rule-no-unknown 
+  4:13  ✖  Unexpected unknown function "-"                  function-no-unknown
+  4:21  ✖  Unexpected unknown function "adjust-saturation"  function-no-unknown
+  7:3   ✖  Unexpected unknown at-rule "@if"                 at-rule-no-unknown 
+  8:12  ✖  Unexpected unknown function "darken"             function-no-unknown
+ 13:14  ✖  Unexpected unknown function "darken"             function-no-unknown
+ 17:14  ✖  Unexpected unknown function "darken"             function-no-unknown
+ 21:3   ✖  Unexpected unknown at-rule "@else"               at-rule-no-unknown 
+ 22:12  ✖  Unexpected unknown function "lighten"            function-no-unknown
+ 27:14  ✖  Unexpected unknown function "lighten"            function-no-unknown
+ 31:14  ✖  Unexpected unknown function "lighten"            function-no-unknown
+
+src/sass/_libs/cellular-mixins/_png.scss
+ 1:1  ✖  Unexpected unknown at-rule "@mixin"  at-rule-no-unknown
+ 2:3  ✖  Unexpected unknown at-rule "@if"     at-rule-no-unknown
+
+src/sass/_libs/cellular-mixins/_popout.scss
+  1:1   ✖  Unexpected unknown at-rule "@mixin"   at-rule-no-unknown 
+  5:18  ✖  Unexpected unknown function "darken"  function-no-unknown
+ 15:31  ✖  Unexpected unknown function "darken"  function-no-unknown
+
+src/sass/_libs/cellular-mixins/_ribbon.scss
+  1:1   ✖  Unexpected unknown at-rule "@mixin"   at-rule-no-unknown 
+  5:18  ✖  Unexpected unknown function "darken"  function-no-unknown
+ 13:17  ✖  Unexpected unknown function "darken"  function-no-unknown
+
+src/sass/_libs/cellular-mixins/_round.scss
+  1:1  ✖  Unexpected unknown at-rule "@mixin"  at-rule-no-unknown
+  2:3  ✖  Unexpected unknown at-rule "@if"     at-rule-no-unknown
+  6:3  ✖  Unexpected unknown at-rule "@if"     at-rule-no-unknown
+ 11:3  ✖  Unexpected unknown at-rule "@if"     at-rule-no-unknown
+ 16:3  ✖  Unexpected unknown at-rule "@if"     at-rule-no-unknown
+ 21:3  ✖  Unexpected unknown at-rule "@if"     at-rule-no-unknown
+
+src/sass/_libs/cellular-mixins/_svg.scss
+ 1:1  ✖  Unexpected unknown at-rule "@mixin"  at-rule-no-unknown
+ 2:3  ✖  Unexpected unknown at-rule "@if"     at-rule-no-unknown
+
+src/sass/_libs/cellular-mixins/_textstroke.scss
+ 1:1  ✖  Unexpected unknown at-rule "@mixin"  at-rule-no-unknown
+
+src/sass/_libs/cellular-mixins/_title.scss
+ 1:1  ✖  Unexpected unknown at-rule "@mixin"  at-rule-no-unknown
+
+src/sass/_libs/cellular-mixins/_transition.scss
+ 1:1  ✖  Unexpected unknown at-rule "@mixin"  at-rule-no-unknown
+ 3:3  ✖  Unexpected unknown at-rule "@if"     at-rule-no-unknown
+
+src/sass/_libs/cellular-mixins/_triangle.scss
+  1:1  ✖  Unexpected unknown at-rule "@mixin"  at-rule-no-unknown
+ 15:3  ✖  Unexpected unknown at-rule "@if"     at-rule-no-unknown
+ 21:3  ✖  Unexpected unknown at-rule "@if"     at-rule-no-unknown
+ 27:3  ✖  Unexpected unknown at-rule "@if"     at-rule-no-unknown
+ 33:3  ✖  Unexpected unknown at-rule "@if"     at-rule-no-unknown
+
+src/sass/_libs/cellular-mixins/_uniquelinks.scss
+  1:1   ✖  Unexpected unknown at-rule "@mixin"   at-rule-no-unknown 
+  4:19  ✖  Unexpected unknown function "darken"  function-no-unknown
+  8:19  ✖  Unexpected unknown function "darken"  function-no-unknown
+ 12:19  ✖  Unexpected unknown function "darken"  function-no-unknown
+ 16:19  ✖  Unexpected unknown function "darken"  function-no-unknown
+ 20:19  ✖  Unexpected unknown function "darken"  function-no-unknown
+
+src/sass/_mixins/cellular-mixins/_animations.scss
+   1:1   ✖  Unexpected unknown at-rule "@mixin"      at-rule-no-unknown    
+  23:1   ✖  Unexpected unknown at-rule "@mixin"      at-rule-no-unknown    
+  39:1   ✖  Unexpected unknown at-rule "@mixin"      at-rule-no-unknown    
+  52:1   ✖  Unexpected unknown at-rule "@mixin"      at-rule-no-unknown    
+  64:1   ✖  Unexpected unknown at-rule "@mixin"      at-rule-no-unknown    
+  78:1   ✖  Unexpected unknown at-rule "@mixin"      at-rule-no-unknown    
+ 103:1   ✖  Unexpected unknown at-rule "@mixin"      at-rule-no-unknown    
+ 104:14  ✖  Expected keyframe name to be kebab-case  keyframes-name-pattern
+ 117:14  ✖  Expected keyframe name to be kebab-case  keyframes-name-pattern
+ 133:1   ✖  Unexpected unknown at-rule "@mixin"      at-rule-no-unknown    
+ 160:1   ✖  Unexpected unknown at-rule "@mixin"      at-rule-no-unknown    
+
+src/sass/_mixins/cellular-mixins/_base_lists.scss
+ 11:5  ✖  Unexpected unknown function "linear-$color-hilight"       function-no-unknown      
+ 63:1  ✖  Expected selector "li" to come before selector "ol > li"  no-descending-specificity
+ 74:4  ✖  Unexpected empty block                                    block-no-empty           
+
+src/sass/_mixins/cellular-mixins/_border-radius.scss
+ 1:1  ✖  Unexpected unknown at-rule "@mixin"  at-rule-no-unknown
+ 3:3  ✖  Unexpected unknown at-rule "@if"     at-rule-no-unknown
+
+src/sass/_mixins/cellular-mixins/_box-shadow.scss
+ 1:1  ✖  Unexpected unknown at-rule "@mixin"  at-rule-no-unknown
+ 3:3  ✖  Unexpected unknown at-rule "@if"     at-rule-no-unknown
+
+src/sass/_mixins/cellular-mixins/_button.scss
+  1:1   ✖  Unexpected unknown at-rule "@mixin"    at-rule-no-unknown 
+ 41:7   ✖  Unexpected unknown at-rule "@if"       at-rule-no-unknown 
+ 42:9   ✖  Unexpected unknown at-rule "@include"  at-rule-no-unknown 
+ 45:7   ✖  Unexpected unknown at-rule "@else"     at-rule-no-unknown 
+ 46:9   ✖  Unexpected unknown at-rule "@include"  at-rule-no-unknown 
+ 53:5   ✖  Unexpected unknown at-rule "@if"       at-rule-no-unknown 
+ 54:7   ✖  Unexpected unknown at-rule "@include"  at-rule-no-unknown 
+ 55:7   ✖  Unexpected unknown at-rule "@include"  at-rule-no-unknown 
+ 58:5   ✖  Unexpected unknown at-rule "@else"     at-rule-no-unknown 
+ 59:7   ✖  Unexpected unknown at-rule "@include"  at-rule-no-unknown 
+ 60:7   ✖  Unexpected unknown at-rule "@include"  at-rule-no-unknown 
+ 64:3   ✖  Unexpected unknown at-rule "@if"       at-rule-no-unknown 
+ 65:14  ✖  Unexpected unknown function "lighten"  function-no-unknown
+ 68:3   ✖  Unexpected unknown at-rule "@if"       at-rule-no-unknown 
+ 69:14  ✖  Unexpected unknown function "darken"   function-no-unknown
+ 72:3   ✖  Unexpected unknown at-rule "@if"       at-rule-no-unknown 
+ 73:19  ✖  Unexpected unknown function "lighten"  function-no-unknown
+ 76:3   ✖  Unexpected unknown at-rule "@if"       at-rule-no-unknown 
+ 77:19  ✖  Unexpected unknown function "darken"   function-no-unknown
+
+src/sass/_mixins/cellular-mixins/_checkbox.scss
+  1:1   ✖  Unexpected unknown at-rule "@mixin"   at-rule-no-unknown 
+ 31:21  ✖  Unexpected unknown function "darken"  function-no-unknown
+
+src/sass/_mixins/cellular-mixins/_clear.scss
+ 1:1  ✖  Unexpected unknown at-rule "@mixin"  at-rule-no-unknown
+
+src/sass/_mixins/cellular-mixins/_contrast.scss
+  1:1   ✖  Unexpected unknown at-rule "@mixin"    at-rule-no-unknown 
+  2:3   ✖  Unexpected unknown at-rule "@if"       at-rule-no-unknown 
+  3:12  ✖  Unexpected unknown function "lighten"  function-no-unknown
+  6:14  ✖  Unexpected unknown function "lighten"  function-no-unknown
+ 10:3   ✖  Unexpected unknown at-rule "@else"     at-rule-no-unknown 
+ 11:12  ✖  Unexpected unknown function "darken"   function-no-unknown
+ 14:14  ✖  Unexpected unknown function "darken"   function-no-unknown
+
+src/sass/_mixins/cellular-mixins/_gradient.scss
+  1:1   ✖  Unexpected double-slash CSS comment    no-invalid-double-slash-comments
+  9:3   ✖  Unexpected unknown at-rule "@if"       at-rule-no-unknown              
+ 10:15  ✖  Unexpected unknown function "darken"   function-no-unknown             
+ 13:3   ✖  Unexpected unknown at-rule "@else"     at-rule-no-unknown              
+ 14:15  ✖  Unexpected unknown function "lighten"  function-no-unknown             
+ 17:3   ✖  Unexpected unknown at-rule "@if"       at-rule-no-unknown              
+ 26:3   ✖  Unexpected unknown at-rule "@else"     at-rule-no-unknown              
+
+src/sass/_mixins/cellular-mixins/_icon.scss
+ 1:1   ✖  Unexpected unknown at-rule "@mixin"    at-rule-no-unknown 
+ 2:14  ✖  Unexpected unknown function "unquote"  function-no-unknown
+ 3:14  ✖  Unexpected unknown function "unquote"  function-no-unknown
+
+src/sass/_mixins/cellular-mixins/_link.scss
+  1:1   ✖  Unexpected unknown at-rule "@mixin"    at-rule-no-unknown 
+  5:12  ✖  Unexpected unknown function "darken"   function-no-unknown
+ 11:12  ✖  Unexpected unknown function "lighten"  function-no-unknown
+
+src/sass/_mixins/cellular-mixins/_loaders.scss
+  17:1   ✖  Unexpected unknown at-rule "@mixin"       at-rule-no-unknown 
+  24:3   ✖  Unexpected empty comment                  comment-no-empty   
+  32:12  ✖  Unexpected unknown function "-"           function-no-unknown
+  40:5   ✖  Unexpected unknown at-rule "@if"          at-rule-no-unknown 
+  46:5   ✖  Unexpected unknown at-rule "@if"          at-rule-no-unknown 
+  47:7   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+  50:5   ✖  Unexpected unknown at-rule "@if"          at-rule-no-unknown 
+  51:7   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+  54:5   ✖  Unexpected unknown at-rule "@if"          at-rule-no-unknown 
+  55:7   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+  58:5   ✖  Unexpected unknown at-rule "@if"          at-rule-no-unknown 
+  59:7   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+  62:5   ✖  Unexpected unknown at-rule "@if"          at-rule-no-unknown 
+  63:7   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+  66:5   ✖  Unexpected unknown at-rule "@if"          at-rule-no-unknown 
+  67:7   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+  70:5   ✖  Unexpected unknown at-rule "@if"          at-rule-no-unknown 
+  71:7   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+  74:5   ✖  Unexpected unknown at-rule "@if"          at-rule-no-unknown 
+  75:7   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+  78:5   ✖  Unexpected unknown at-rule "@if"          at-rule-no-unknown 
+  79:7   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+  82:5   ✖  Unexpected unknown at-rule "@if"          at-rule-no-unknown 
+  83:7   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+  86:5   ✖  Unexpected unknown at-rule "@if"          at-rule-no-unknown 
+  87:7   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+  92:1   ✖  Unexpected unknown at-rule "@mixin"       at-rule-no-unknown 
+  95:3   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+  97:3   ✖  Unexpected empty comment                  comment-no-empty   
+ 133:1   ✖  Unexpected unknown at-rule "@mixin"       at-rule-no-unknown 
+ 137:3   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+ 142:3   ✖  Unexpected empty comment                  comment-no-empty   
+ 172:1   ✖  Unexpected unknown at-rule "@mixin"       at-rule-no-unknown 
+ 176:3   ✖  Unexpected empty comment                  comment-no-empty   
+ 180:25  ✖  Unexpected unknown function "darken"      function-no-unknown
+ 195:27  ✖  Unexpected unknown function "darken"      function-no-unknown
+ 201:28  ✖  Unexpected unknown function "adjust-hue"  function-no-unknown
+ 207:28  ✖  Unexpected unknown function "adjust-hue"  function-no-unknown
+ 211:1   ✖  Unexpected unknown at-rule "@mixin"       at-rule-no-unknown 
+ 216:3   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+ 218:3   ✖  Unexpected empty comment                  comment-no-empty   
+ 251:1   ✖  Unexpected unknown at-rule "@mixin"       at-rule-no-unknown 
+ 259:3   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+ 263:3   ✖  Unexpected empty comment                  comment-no-empty   
+ 267:31  ✖  Unexpected unknown function "darken"      function-no-unknown
+ 295:1   ✖  Unexpected unknown at-rule "@mixin"       at-rule-no-unknown 
+ 303:3   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+ 305:3   ✖  Unexpected empty comment                  comment-no-empty   
+ 341:1   ✖  Unexpected unknown at-rule "@mixin"       at-rule-no-unknown 
+ 345:3   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+ 347:3   ✖  Unexpected empty comment                  comment-no-empty   
+ 357:14  ✖  Unexpected empty block                    block-no-empty     
+ 360:15  ✖  Unexpected empty block                    block-no-empty     
+ 374:1   ✖  Unexpected unknown at-rule "@mixin"       at-rule-no-unknown 
+ 380:3   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+ 382:3   ✖  Unexpected empty comment                  comment-no-empty   
+ 399:1   ✖  Unexpected unknown at-rule "@mixin"       at-rule-no-unknown 
+ 402:3   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+ 404:3   ✖  Unexpected empty comment                  comment-no-empty   
+ 418:14  ✖  Unexpected empty block                    block-no-empty     
+ 421:15  ✖  Unexpected empty block                    block-no-empty     
+ 424:14  ✖  Unexpected empty block                    block-no-empty     
+ 429:1   ✖  Unexpected unknown at-rule "@mixin"       at-rule-no-unknown 
+ 435:3   ✖  Unexpected unknown at-rule "@include"     at-rule-no-unknown 
+ 437:3   ✖  Unexpected empty comment                  comment-no-empty   
+
+src/sass/_mixins/cellular-mixins/_mediaquery.scss
+ 2:12  ✖  Unknown word  CssSyntaxError
+
+src/sass/_mixins/cellular-mixins/_overlay.scss
+  1:1   ✖  Unexpected unknown at-rule "@mixin"              at-rule-no-unknown 
+  4:13  ✖  Unexpected unknown function "-"                  function-no-unknown
+  4:21  ✖  Unexpected unknown function "adjust-saturation"  function-no-unknown
+  7:3   ✖  Unexpected unknown at-rule "@if"                 at-rule-no-unknown 
+  8:12  ✖  Unexpected unknown function "darken"             function-no-unknown
+ 13:14  ✖  Unexpected unknown function "darken"             function-no-unknown
+ 17:14  ✖  Unexpected unknown function "darken"             function-no-unknown
+ 21:3   ✖  Unexpected unknown at-rule "@else"               at-rule-no-unknown 
+ 22:12  ✖  Unexpected unknown function "lighten"            function-no-unknown
+ 27:14  ✖  Unexpected unknown function "lighten"            function-no-unknown
+ 31:14  ✖  Unexpected unknown function "lighten"            function-no-unknown
+
+src/sass/_mixins/cellular-mixins/_png.scss
+ 1:1  ✖  Unexpected unknown at-rule "@mixin"  at-rule-no-unknown
+ 2:3  ✖  Unexpected unknown at-rule "@if"     at-rule-no-unknown
+
+src/sass/_mixins/cellular-mixins/_popout.scss
+  1:1   ✖  Unexpected unknown at-rule "@mixin"   at-rule-no-unknown 
+  5:18  ✖  Unexpected unknown function "darken"  function-no-unknown
+ 15:31  ✖  Unexpected unknown function "darken"  function-no-unknown
+
+src/sass/_mixins/cellular-mixins/_ribbon.scss
+  1:1   ✖  Unexpected unknown at-rule "@mixin"   at-rule-no-unknown 
+  5:18  ✖  Unexpected unknown function "darken"  function-no-unknown
+ 13:17  ✖  Unexpected unknown function "darken"  function-no-unknown
+
+src/sass/_mixins/cellular-mixins/_round.scss
+  1:1  ✖  Unexpected unknown at-rule "@mixin"  at-rule-no-unknown
+  2:3  ✖  Unexpected unknown at-rule "@if"     at-rule-no-unknown
+  6:3  ✖  Unexpected unknown at-rule "@if"     at-rule-no-unknown
+ 11:3  ✖  Unexpected unknown at-rule "@if"     at-rule-no-unknown
+ 16:3  ✖  Unexpected unknown at-rule "@if"     at-rule-no-unknown
+ 21:3  ✖  Unexpected unknown at-rule "@if"     at-rule-no-unknown
+
+src/sass/_mixins/cellular-mixins/_svg.scss
+ 1:1  ✖  Unexpected unknown at-rule "@mixin"  at-rule-no-unknown
+ 2:3  ✖  Unexpected unknown at-rule "@if"     at-rule-no-unknown
+
+src/sass/_mixins/cellular-mixins/_textstroke.scss
+ 1:1  ✖  Unexpected unknown at-rule "@mixin"  at-rule-no-unknown
+
+src/sass/_mixins/cellular-mixins/_title.scss
+ 1:1  ✖  Unexpected unknown at-rule "@mixin"  at-rule-no-unknown
+
+src/sass/_mixins/cellular-mixins/_transition.scss
+ 1:1  ✖  Unexpected unknown at-rule "@mixin"  at-rule-no-unknown
+ 3:3  ✖  Unexpected unknown at-rule "@if"     at-rule-no-unknown
+
+src/sass/_mixins/cellular-mixins/_triangle.scss
+  1:1  ✖  Unexpected unknown at-rule "@mixin"  at-rule-no-unknown
+ 15:3  ✖  Unexpected unknown at-rule "@if"     at-rule-no-unknown
+ 21:3  ✖  Unexpected unknown at-rule "@if"     at-rule-no-unknown
+ 27:3  ✖  Unexpected unknown at-rule "@if"     at-rule-no-unknown
+ 33:3  ✖  Unexpected unknown at-rule "@if"     at-rule-no-unknown
+
+src/sass/_mixins/cellular-mixins/_uniquelinks.scss
+  1:1   ✖  Unexpected unknown at-rule "@mixin"   at-rule-no-unknown 
+  4:19  ✖  Unexpected unknown function "darken"  function-no-unknown
+  8:19  ✖  Unexpected unknown function "darken"  function-no-unknown
+ 12:19  ✖  Unexpected unknown function "darken"  function-no-unknown
+ 16:19  ✖  Unexpected unknown function "darken"  function-no-unknown
+ 20:19  ✖  Unexpected unknown function "darken"  function-no-unknown
+

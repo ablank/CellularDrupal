@@ -3,52 +3,49 @@
  */
 
 cellular.jScrolli = function (opts) {
-  var o = $.extend(
-    {
-      cclass: "jScrolli", // Object class selector
-      active: 0, // Index of initially selected slide
-      background: "img:first", // Selector for applying background image
-      title: "h2, h3", // Selector for applying title class
-      // width: "100%", // 'auto' or '[value]', i.e. '300px'
-      height: "auto", // 'auto' or '[value]', i.e. '300px'
-      controls: {
-        showmarkers: true,
-        showcontrols: true,
-        keyboard: true,
-        swipe: true,
-        autoplay: true,
-        pauseonhover: true,
-        autodim: true,
-        delay: 1.4, // Time (seconds) to wait before dimming.
-        text: {
-          next: "Next",
-          prev: "Prev",
-          pause: "Pause",
-          play: "Play",
-        },
-      },
-      transition: {
-        pause: 5, // Time (seconds) to pause between slides.
-        // speed: 500 // Animation speed (milliseconds).
-      },
-      caption: {
-        enable: true,
-        autohide: false,
-        selector: ".caption", // '.selector' used to generate caption
-      },
+  var o = $.extend({
+    cclass: "jScrolli", // Object class selector
+    active: 0, // Index of initially selected slide
+    background: 'img:first', // Selector for applying background image
+    title: 'h2, h3', // Selector for applying title class
+    //width: "100%", // 'auto' or '[value]', i.e. '300px'
+    height: "auto", // 'auto' or '[value]', i.e. '300px'
+    controls: {
+      showmarkers: true,
+      showcontrols: true,
+      keyboard: true,
+      swipe: true,
+      autoplay: true,
+      pauseonhover: true,
+      autodim: true,
+      delay: 1.4, // Time (seconds) to wait before dimming.
+      text: {
+        next: "Next",
+        prev: "Prev",
+        pause: "Pause",
+        play: "Play"
+      }
     },
-    opts
-  );
-  var fn = {};
+    transition: {
+      pause: 5 // Time (seconds) to pause between slides.
+        //speed: 500 // Animation speed (milliseconds).
+    },
+    caption: {
+      enable: true,
+      autohide: false,
+      selector: ".caption" // '.selector' used to generate caption
+    }
+  }, opts),
+    fn = {};
 
   /**
    * Format html buttons for controls.
    *
    * @param string $text
-   * @return string
+   * @returns string
    */
   fn.button = function ($text) {
-    return `<a class="${o.cclass}-control ${$text.toLowerCase()}">${$text}</a>`;
+    return '<a class="' + o.cclass + '-control ' + $text.toLowerCase() + '">' + $text + '</a>';
   };
 
   /**
@@ -76,23 +73,22 @@ cellular.jScrolli = function (opts) {
    */
   fn.go = function (index, $obj, state) {
     if (!state.paused) {
-      var tclass = "transition";
-      var li = $obj.find(`.${o.cclass}-slide`);
+      var tclass = 'transition',
+        li = $obj.find('.' + o.cclass + '-slide');
       // Unset tabindexes
-      li.find("a").prop("tabindex", "-1");
+      li.find('a').prop("tabindex", "-1");
       // Get current slide.
       state.current = parseInt(index);
       // Normalize state.
       fn.normalize(state);
       // Update classes on slides for css transition.
-      jQuery(li[state.prev]).activate("previous");
-      jQuery(li[state.next]).activate("next");
-      jQuery(li[index]).activate().find("a").prop("tabindex", "-1");
+      jQuery(li[state.prev]).activate('previous');
+      jQuery(li[state.next]).activate('next');
+      jQuery(li[index]).activate()
+        .find('a').prop("tabindex", "-1");
 
       // Listen for transition to complete & update classes.
-      $obj
-        .parent()
-        .addClass(tclass)
+      $obj.parent().addClass(tclass)
         .on(cellular.transitionend(), function () {
           jQuery(this).removeClass(tclass);
         });
@@ -115,20 +111,22 @@ cellular.jScrolli = function (opts) {
    * Update the current marker.
    */
   fn.mark = function ($obj, state) {
-    $obj.siblings().find(`.${o.cclass}-marker`).eq(state.current).activate();
+    $obj.siblings().find('.' + o.cclass + '-marker')
+      .eq(state.current).activate();
   };
 
   /**
    * Update slide caption
    */
   fn.caption = function ($obj, state) {
-    var wrap = $obj.parent().parent();
-    var cap = wrap.find("> .caption p");
+    var wrap = $obj.parent().parent(),
+      cap = wrap.find('> .caption p');
     // Get current slide's caption
     state.caption = wrap.find(o.caption.selector).eq(state.current).text();
     cap.on(cellular.transitionend(), function () {
       // Update the active caption
-      $(this).text(state.caption).activate();
+      $(this).text(state.caption)
+        .activate();
     });
   };
 
@@ -152,30 +150,27 @@ cellular.jScrolli = function (opts) {
    * @param {type} state
    */
   fn.events = function ($obj, state) {
-    var controls = $obj.siblings(".controls");
-    var wrap = $obj.parent();
-    var eX = null;
-    var eY = null;
+    var controls = $obj.siblings('.controls'),
+      wrap = $obj.parent(),
+      eX = null,
+      eY = null;
     // Link markers to respective slides
     if (o.controls.showmarkers) {
-      $obj
-        .siblings()
-        .find(`.${o.cclass}-marker`)
-        .on("click", function () {
-          state.current = jQuery(this).attr("data-href");
-          state.paused = false;
-          fn.go(state.current, $obj, state);
-        });
+      $obj.siblings().find('.' + o.cclass + '-marker').on('click', function () {
+        state.current = jQuery(this).attr('data-href');
+        state.paused = false;
+        fn.go(state.current, $obj, state);
+      });
     }
 
     // Previous
-    wrap.find(".prev").on("click", function (e) {
+    wrap.find('.prev').on('click', function (e) {
       state.current = state.prev;
       state.paused = false;
       fn.go(state.current, $obj, state);
     });
     // Next
-    wrap.find(".next").on("click", function (e) {
+    wrap.find('.next').on('click', function (e) {
       state.current = state.next;
       state.paused = false;
       fn.go(state.current, $obj, state);
@@ -202,7 +197,7 @@ cellular.jScrolli = function (opts) {
      */
     // Pause/showcontrols
     wrap.on({
-      mouseover() {
+      'mouseover': function () {
         state.active = true;
         if (o.controls.pauseonhover) {
           state.paused = true;
@@ -213,7 +208,7 @@ cellular.jScrolli = function (opts) {
           window.clearTimeout(wrap.timeout);
         }
       },
-      mouseout() {
+      'mouseout': function () {
         state.active = false;
         if (o.controls.pauseonhover) {
           state.paused = false;
@@ -223,16 +218,16 @@ cellular.jScrolli = function (opts) {
             wrap.deactivate();
           }, o.controls.delay * 1000);
         }
-      },
+      }
     });
     // Keyboard
     if (o.controls.keyboard) {
-      jQuery(document).on("keyup", function (e) {
+      jQuery(document).on('keyup', function (e) {
         var keys = [
           37, // left
-          39, // right
-          // 38, // up
-          // 40 // down
+          39 // right
+            //38, // up
+            //40 // down
         ];
         if (keys.indexOf(e.which) !== -1) {
           e.preventDefault();
@@ -323,8 +318,8 @@ cellular.jScrolli = function (opts) {
    */
   fn.setheight = function ($obj, state) {
     jQuery(document).ready(function () {
-      if (o.height === "auto") {
-        $obj.find("> li").each(function () {
+      if (o.height === 'auto') {
+        $obj.find('> li').each(function () {
           var tHeight = this.clientHeight;
 
           if (tHeight > state.maxheight) {
@@ -346,25 +341,23 @@ cellular.jScrolli = function (opts) {
    * @param object state
    */
   fn.style = function ($obj, state) {
-    var li = $obj.find("> li");
+    var li = $obj.find('> li');
 
-    $obj
-      .prop("tabindex", "0")
+    $obj.prop("tabindex", "0")
       .addClass(cellular.opts.cclass)
-      .wrap(`<div class="${cellular.opts.cclass} ${o.cclass}-wrap" />`)
-      .parent()
-      .css({
-        willChange: "contents",
-      });
+      .wrap('<div class="' + cellular.opts.cclass + ' ' + o.cclass + '-wrap" />')
+      .parent().css({
+      willChange: "contents"
+    });
 
-    li.prop("tabindex", "-1")
-      .addClass(`${o.cclass}-slide`)
+    li.prop('tabindex', "-1")
+      .addClass(o.cclass + '-slide')
       .each(function () {
         var $t = jQuery(this);
-        $t.children().wrapAll(`<div class="${o.cclass}-slide-content cell" />`);
+        $t.children().wrapAll('<div class="' + o.cclass + '-slide-content cell" />');
 
         if (o.title) {
-          $t.find(o.title).addClass("title");
+          $t.find(o.title).addClass('title');
         }
 
         if (o.background) {
@@ -372,8 +365,9 @@ cellular.jScrolli = function (opts) {
           if (background.length) {
             background.hide();
             $t.css({
-              "background-image": `url(${background.attr("src")})`,
-            }).addClass(`${o.cclass}-background`);
+              'background-image': 'url(' + background.attr('src') + ')'
+            })
+              .addClass(o.cclass + '-background');
           }
         }
       });
@@ -381,11 +375,9 @@ cellular.jScrolli = function (opts) {
     fn.setheight($obj, state);
 
     if (o.controls.showmarkers) {
-      var markers = jQuery(`<ul class="${o.cclass}-markers"/>`);
-      for (let i = 0; i < li.length; i += 1) {
-        markers.append(
-          `<li class="${o.cclass}-marker" data-href="${i}">${i + 1}</li>`
-        );
+      var markers = jQuery('<ul class="' + o.cclass + '-markers"/>');
+      for (var i = 0; i < li.length; i += 1) {
+        markers.append('<li class="' + o.cclass + '-marker" data-href="' + i + '">' + (i + 1) + '</li>');
       }
       $obj.after(markers);
       fn.mark($obj, state);
@@ -397,44 +389,45 @@ cellular.jScrolli = function (opts) {
       if (cap.length) {
         cap.hide();
 
-        $obj.after(`<div class="${o.cclass}-caption"><p/></div>`);
+        $obj.after('<div class="' + o.cclass + '-caption"><p/></div>');
       }
     }
 
     if (o.controls.showcontrols) {
-      let j;
-      var controls = [
-        fn.button(o.controls.text.prev),
-        fn.button(o.controls.text.next),
-        // o.autoplay ? fn.button(o.controls.text.pause) : null
-      ];
+      var j,
+        controls = [
+          fn.button(o.controls.text.prev),
+          fn.button(o.controls.text.next)
+            //o.autoplay ? fn.button(o.controls.text.pause) : null
+        ];
       for (j = 0; j < controls.length; j += 1) {
         $obj.parent().prepend(controls[j]);
       }
     }
+
   };
 
   /**
    * Init jScrolli
    */
   fn.init = function () {
-    var $obj = jQuery(this);
-    var state = {
-      active: true,
-      paused: false,
-      count: $obj.find("> li").length - 1,
-      // height: o.height ? o.height : fn.setheight($obj, state),
-      width: o.width ? o.width : $obj.width(),
-      maxheight: 0,
-      interval: 0,
-      controls: 0,
-      caption: jQuery(o.caption.selector).html(),
-      current: o.active ? o.active : 0,
-    };
+    var $obj = jQuery(this),
+      state = {
+        active: true,
+        paused: false,
+        count: $obj.find('> li').length - 1,
+        //height: o.height ? o.height : fn.setheight($obj, state),
+        width: o.width ? o.width : $obj.width(),
+        maxheight: 0,
+        interval: 0,
+        controls: 0,
+        caption: jQuery(o.caption.selector).html(),
+        current: o.active ? o.active : 0
+      };
     // o.caption.selector = o.caption.selector === 'auto' ? '[title]' : o.caption.selector;
 
     // Add markup
-    $obj.one(o.cclass, function () {
+    $obj.once(o.cclass, function () {
       fn.style($obj, state);
     });
     // Add Event Listeners

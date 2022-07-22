@@ -1,0 +1,40 @@
+/**
+  * @file src\sass\styles\_cellular-positioning.scss
+  * Element positioning classes
+*/
+.clearfix {
+  @include clear();
+}
+.hidden {
+  position: absolute;
+  left: -9999px;
+}
+// Display lists inline
+.inline {
+  margin: auto;
+  list-style: none;
+
+  & > {
+    display: inline;
+  }
+}
+
+.left,
+.right,
+.center {
+  display: block;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.center {
+  @include clear();
+  float: none;
+  margin: 0 auto;
+}

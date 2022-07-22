@@ -7,9 +7,9 @@
 */
 
 @import "variables";
-@import "styles/__index";
-@import "components/__index";
+@import "base/__index";
+@import "cellular/__index";
 @import "pages/__index";
 @import "breakpoints/__index";
-
+@import "style/__index";
 @import "custom";

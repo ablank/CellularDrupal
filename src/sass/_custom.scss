@@ -1,24 +1,30 @@
 /**
-* @file Custom styles
+* @file src\sass\custom\_custom.scss
+* Custom styles
 */
-@import "variables";
-
-html,
-body {
-}
 
 a {
-  &,
   &:visited {
   }
+
   &:hover,
+  &:active,
   &:focus {
   }
 }
 
+p {
+}
+
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
+}
+
+h1 {
 }
 
 h2 {
@@ -27,21 +33,15 @@ h2 {
 h3 {
 }
 
-p {
+small {
 }
 
-#header {
-}
-#footer {
-}
-
-@include mediaquery($mediaquery-narrow) {
+blockquote,
+q {
 }
 
-@include mediaquery($mediaquery-small) {
+q {
 }
 
-.scrolled {
-  //  Cellular adds .scrolled to body as the page is scrolled
-
+blockquote {
 }

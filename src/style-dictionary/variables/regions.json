@@ -1,0 +1,31 @@
+{
+  "region": {
+    "margin": {"value": "0"},
+    "padding": {"value": "0"},
+    "border": {"value": "0"},
+    "min-height": {"value": "3{default.unit}"}
+  },
+  "body": {
+    "color": {"value": "{swatch.black}"},
+    "background": {"value": "{swatch.white}"}
+  },
+  "header": {
+    "position": {"value": "fixed"},
+    "height": {"value": "{logo.height.value}"},
+    "color": {"value": "{swatch.white}"},
+    "background": {"value": "{swatch.black}"}
+  },
+  "content": {
+    "color": {"value": "{swatch.black}"},
+    "background": {"value": "{swatch.white}"}
+  },
+  "sidebar": {
+    "width": {"value": "27%"},
+    "color": {"value": "{swatch.white}"},
+    "background": {"value": "{swatch.grey}"}
+  },
+  "footer": {
+    "color": {"value": "{swatch.black}"},
+    "background": {"value": "{swatch.black}"}
+  }
+}

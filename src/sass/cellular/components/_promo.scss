@@ -1,0 +1,47 @@
+
+.promotion {
+    &-promo {
+      transition: 0.25s linear;
+      text-decoration: line-through;
+      color: $color-warning;
+      font-family: $h-font;
+      font-size: 1.15rem;
+      font-weight: bold;
+    }
+  
+    &-price {
+      position: absolute;
+      z-index: -1;
+      right: 0;
+      bottom: 0;
+      width: 92px;
+      height: 92px;
+      padding-top: 1.25rem;
+      padding-bottom: 0;
+      transition: 0.25s linear;
+      transform: translate(5px, 27.5px) rotate(-9deg);
+      text-align: center;
+      color: $white;
+      border: 1px dashed $white;
+      border-radius: 5rem;
+      background: $color-warning;
+      font-family: $h-font;
+      font-size: 1.1rem;
+      font-weight: $default-font-weight-bold;
+      line-height: 1.15;
+  
+      &-desc {
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+      }
+  
+      &-text {
+        margin: 0 auto;
+        padding: 0;
+        font-weight: $default-font-weight-bolder;
+      }
+    }
+  }

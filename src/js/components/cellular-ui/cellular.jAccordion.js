@@ -1,17 +1,14 @@
 cellular.jAccordion = function (opts) {
-  var o = jQuery.extend(
-    {
-      active: 0, // Index value of initial content to display.
-      duration: 500, // Duration of transition.
-      easing: "swing", // Type of easing.
-      single: false, // Allow multiple panels to be opened or only 1?
-      pclass: "panel",
-    },
-    opts
-  );
-  var fn = {};
+  var o = jQuery.extend({
+    active: 0, // Index value of initial content to display.
+    duration: 500, // Duration of transition.
+    easing: "swing", // Type of easing.
+    single: false, // Allow multiple panels to be opened or only 1?
+    pclass: "panel"
+  }, opts),
+    fn = {};
 
-  o.pselect = `.${o.pclass}`;
+  o.pselect = '.' + o.pclass;
   /**
    * The <li> object to show.
    *
@@ -19,13 +16,14 @@ cellular.jAccordion = function (opts) {
    *  $('<li>')
    */
   fn.showContent = function (li) {
+
     if (o.single) {
       li.siblings().find(o.pselect).slideUp(o.duration, o.easing);
-      li.activate().find(o.pselect).slideDown(o.duration, o.easing);
+      li.activate()
+        .find(o.pselect).slideDown(o.duration, o.easing);
     } else {
       li.toggleClass(cellular.opts.activeclass)
-        .find(o.pselect)
-        .slideToggle(o.duration, o.easing);
+        .find(o.pselect).slideToggle(o.duration, o.easing);
     }
   };
 
@@ -35,22 +33,20 @@ cellular.jAccordion = function (opts) {
    * @param object $obj
    */
   fn.style = function ($obj) {
-    $obj.one("jAccordion", function () {
-      $obj
-        .prop("tabindex", "0")
-        .find("> li")
-        .each(function () {
-          var li = jQuery(this);
+    $obj.once('jAccordion', function () {
 
-          li.kidWrap();
-          li.children().eq(0).addClass("title");
-          li.children().eq(1).classify([cellular.opts.cclass, "panel"]);
-          li.find(o.pselect).hide();
-          li.find(".title").click(function (e) {
-            e.preventDefault();
-            fn.showContent(li);
-          });
+      $obj.prop("tabindex", "0").find('> li').each(function () {
+        var li = jQuery(this);
+
+        li.kidWrap();
+        li.children().eq(0).addClass('title');
+        li.children().eq(1).classify([cellular.opts.cclass, 'panel']);
+        li.find(o.pselect).hide();
+        li.find('.title').click(function (e) {
+          e.preventDefault();
+          fn.showContent(li);
         });
+      });
     });
   };
 
@@ -61,7 +57,7 @@ cellular.jAccordion = function (opts) {
     var $obj = jQuery(this);
     // Generate markup for accordion
     fn.style($obj);
-    // Set default content
+    //Set default content
     fn.showContent($obj.children().eq(o.active));
   };
 

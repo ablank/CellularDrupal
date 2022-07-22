@@ -1,8 +1,8 @@
 /**
   * @file
-  * Critical styles, to be added inline.
+  * Critical styles, useful for injecting inline while the page loads.
 */
 
 @import "variables";
-@import "styles/base_fonts";
-@import "styles/_logo";
+
+@import "style/_logo";

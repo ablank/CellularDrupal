@@ -1,0 +1,23 @@
+{
+  "source": [
+    "src/style-dictionary/variables/**/*.json"
+  ],
+  "platforms": {
+    "scss": {
+      "transformGroup": "sass",
+      "buildPath": "src/",
+      "files": [{
+          "format": "sass",
+          "destination": "sass/_variables/_style-dictionary.scss"
+        }]
+    },
+    "js": {
+      "transformGroup": "js",
+      "buildPath": "src/",
+      "files": [{
+          "format": "json/flat",
+          "destination": "js/style-dictionary.json"
+        }] 
+    }
+  }
+}

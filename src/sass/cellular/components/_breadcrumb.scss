@@ -1,0 +1,39 @@
+/**
+  * @file
+  * Breadcrumb navigation styling.
+*/
+#breadcrumb {
+  height: $p-xl;
+  margin: 0 0 $p-xl;
+  padding: 0.1em $p-xxs;
+  background: $white;
+
+  li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 0 0 $p-small;
+    padding: 0 0 0 $p-large;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: $p-size;
+    line-height: $p-xl;
+    color: $white;
+    background-image: url(../assets/icons/png/arrow-right.png);
+
+    a {
+      color: $grey;
+    }
+
+    &.first {
+      background-image: none;
+
+      a {
+        padding: 0 0 0 $p-xl;
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: $p-large;
+        background-image: url(../assets/icons/png/home.png);
+      }
+    }
+  }
+}

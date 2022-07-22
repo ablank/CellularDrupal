@@ -1,0 +1,43 @@
+/**
+  * @file src\sass\styles\_base_lists.scss
+  * Lists
+*/
+
+ol,
+ul,
+dl {
+  width: auto;
+  margin: 0 0 $p-size $p-large;
+  padding: 0;
+  list-style-position: outside;
+}
+li {
+  display: block;
+  margin: $p-xxs auto $p-xxs $p-large;
+}
+
+ul {
+  list-style-type: circle;
+  // list-style-image: url($list-style-ul-img);
+}
+
+ol {
+  list-style-type: decimal;
+  counter-reset: olCount;
+
+  & > li {
+    
+    &::before {
+      content: counter(olCount) ". ";
+      counter-increment: olCount;
+    }
+  }
+}
+
+dt {
+  margin: $p-small 0 0 0;
+  font-weight: bold;
+}
+
+dd {
+}

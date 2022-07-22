@@ -1,0 +1,3 @@
+@function percent($decimal){
+  @return calc($decimal * 1) + unquote("%");
+}

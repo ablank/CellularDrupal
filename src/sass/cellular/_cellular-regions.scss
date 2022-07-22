@@ -1,0 +1,55 @@
+/**
+  * @file src\sass\styles\_cellular-regions.scss
+  * Styling for id'd regions
+*/
+
+#critical {
+
+}
+
+#page-wrap {
+  @if ($header-position == "absolute" OR "fixed") {
+    padding-top: $header_height;
+  }
+}
+
+article,
+#content {
+  background: $content-background;
+  color: $content-color;
+  z-index: 2;
+}
+
+#content-top {}
+#content-bottom {}
+
+aside,
+#sidebar {
+  z-index: 3;
+  background: $black;
+} 
+
+#header {
+  display: block;
+  position: $header-position;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  height: $header-height;
+  background: $black;
+  will-change: height;
+  box-shadow: $dropshadow;
+}
+
+#header-top {}
+#header-bottom {}
+
+#footer {
+  z-index: 1;
+  margin: 5em 0 0;
+  color: $white;
+  background: $black;
+}
+
+#footer-top {}
+#footer-bottom {}

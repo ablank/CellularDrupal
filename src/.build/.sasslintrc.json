@@ -1,0 +1,9 @@
+{
+  "syntax": "postcss-scss",
+  "extends": "stylelint-config-standard",
+  "plugins": [
+    "stylelint-order"
+  ],
+  "ignoreFiles": [],
+  "rules": { }
+}

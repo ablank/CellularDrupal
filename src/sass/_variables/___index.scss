@@ -1,7 +1,10 @@
 /**
-* @file
-* Variables index.
+* @file 
+* Component style index.
+*
+* Comment out any components that will not be used,
+* for best performance/smallest file size.
 */
 
 @import "style-dictionary";
-@import "addons";
+@import "style-dictionary-extended";

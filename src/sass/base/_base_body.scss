@@ -1,0 +1,21 @@
+/**
+  * @file src\sass\styles\_base_body.scss
+  * Base body style.
+*/
+
+html {
+  overflow: auto;
+  /* Force scrollbar display to prevent flicker on short pages. */
+  overflow-y: scroll;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizelegibility;
+  text-size-adjust: 100%;
+  line-height: $p-line-height;
+  font-family: $p-font;
+  font-size: 100%;
+  color: $black;
+  background: $white;
+}

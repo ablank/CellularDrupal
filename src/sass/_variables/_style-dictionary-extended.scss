@@ -1,0 +1,31 @@
+/**
+* @file
+* Add derivatives of style-dictionary variables .
+*/
+
+/* Variable aliases */
+$dark: $color-primary;
+$light: $color-secondary;
+$hilight: $color-hilight;
+
+$black: $swatch-black;
+$white: $swatch-white;
+$grey: $swatch-grey;
+
+$black-light: lighten($black, $adjust);
+$white-dark: darken($white, $adjust);
+$grey-light: lighten($grey, $adjust);
+$grey-dark: darken($grey, $adjust);
+$hilight-light: lighten($hilight, $adjust);
+$hilight-dark: darken($hilight, $adjust);
+
+$p-xxs: calc($p-size * $xxs);
+$p-xs: calc($p-size * $xs);
+$p-small: calc($p-size * $small);
+$p-large: calc($p-size * $large);
+$p-xl: calc($p-size * $xl);
+$p-xxl: calc($p-size * $xxl);
+
+/* Header region */
+// Set header height based on logo height
+$header-height: calc($logo-height + ($logo-padding * 2) + ($logo-margin * 2));

@@ -1,0 +1,35 @@
+/**
+  * @file src\sass\styles\_cellular-positioning.scss
+  * Element positioning classes
+*/
+.xxl {
+  font-size: $p-xxl;
+}
+
+.xl {
+  font-size: $p-xl;
+}
+
+.big {
+  font-size: $p-large;
+}
+
+.small {
+  font-size: $p-small;
+}
+
+.tiny {
+  font-size: $p-tiny;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}

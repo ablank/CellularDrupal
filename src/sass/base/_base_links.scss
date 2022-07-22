@@ -1,0 +1,22 @@
+/**
+  * @file src\sass\styles\_base_links.scss
+  * Anchors / Links
+*/
+a {
+  text-decoration: none;
+  outline: none;
+  background-repeat: no-repeat;
+  color: $hilight;
+  transition: $transition;
+
+  &:visited {
+    color: $hilight-dark;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $hilight-light;
+    outline: none;
+  }
+}

@@ -6,16 +6,16 @@
  * Get the breakpoints specified in CSS
  */
 cellular.breakpoint = function () {
-  var content = window
+  const content = window
     .getComputedStyle(document.querySelector("body"), ":before")
     .getPropertyValue("content");
-  var win = {};
+  const win = {};
   /*
    if (content) {
    win.type =  content.match(/\w*[^\"\'](?=-)/g).join("");
    } else { */
   // Provide default breakpoints if they aren't set by css.
-  var ww = jQuery(window).width();
+  const ww = jQuery(window).width();
   switch (ww) {
     case ww < 650:
       win.type = "window_small";
@@ -46,7 +46,7 @@ cellular.activate = function (theclass) {
   theclass = theclass || cellular.opts.activeclass;
 
   return this.each(function () {
-    var $t = jQuery(this);
+    const $t = jQuery(this);
 
     if (!$t.hasClass(theclass)) {
       $t.addClass(theclass).siblings().removeClass(theclass);
@@ -70,7 +70,7 @@ cellular.deactivate = function (theclass) {
  */
 cellular.kidWrap = function () {
   return this.each(function () {
-    var $t = jQuery(this);
+    const $t = jQuery(this);
 
     if ($t.children().length > 1) {
       $t.children(":gt(0)").wrapAll("<div>");
@@ -94,15 +94,15 @@ cellular.debounce = function (func, wait, immediate) {
   let timeout;
 
   return function () {
-    var context = this;
-    var args = arguments;
-    var later = function () {
+    const context = this;
+    const args = arguments;
+    const later = function () {
       timeout = null;
       if (!immediate) {
         func.apply(context, args);
       }
     };
-    var callNow = immediate && !timeout;
+    const callNow = immediate && !timeout;
 
     clearTimeout(timeout);
     timeout = setTimeout(later, wait);
@@ -118,8 +118,8 @@ cellular.debounce = function (func, wait, immediate) {
  */
 cellular.transitionend = function () {
   let t;
-  var el = document.createElement("test");
-  var transitions = {
+  const el = document.createElement("test");
+  const transitions = {
     transition: "transitionend",
     OTransition: "oTransitionEnd",
     MozTransition: "transitionend",
@@ -151,7 +151,7 @@ cellular.scrolltimer = function (el, uc, dc) {
  * @return {string}
  */
 cellular.buttonize = function (href, title, classes) {
-  var btn = $("<a />")
+  const btn = $("<a />")
     .prop({
       href,
       title,

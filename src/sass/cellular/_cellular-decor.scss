@@ -1,0 +1,57 @@
+/**
+  * @file src\sass\styles\_cellular-decor.scss
+  * Decorative class styles.
+*/
+
+.dropCap:first-letter {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.textShadow {
+  text-shadow: 1px 1px 3px $black;
+}
+
+/* Page curl effect */
+.box-shadow {
+  @include boxshadow(inset 0 0 0.3em 0 $black);
+  // constrain width to prevent pseudo elements from pushing outside of box
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 3em $p-large;
+  background-color: $white;
+
+  &:before,
+  &:after {
+    position: absolute;
+    z-index: -1;
+    bottom: 0.8em;
+    left: 1.2em;
+    width: 40%;
+    height: 1em;
+    content: " ";
+    transform: skew(-5deg) rotate(-5deg);
+    background: transparent;
+    box-shadow: 0 6px 12px rgba($black, 0.3);
+  }
+
+  &:after {
+    right: 12px;
+    left: auto;
+    transform: skew(5deg) rotate(5deg);
+  }
+}
+
+/* Pseudo 3-d elements */
+
+.ribbon {
+  @include ribbon(1.2em, 1em, $black);
+
+  color: $white;
+}
+
+.popout {
+  @include popout(1.2em, 1em, $black);
+
+  color: $white;
+}

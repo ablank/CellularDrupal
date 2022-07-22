@@ -1,0 +1,131 @@
+/**
+  * @file src\sass\styles\__typography.scss
+  * Custom typography
+*/
+
+/**
+  * @file src\sass\styles\_base_typography.scss
+  * Typography
+*/
+/*
+@font-face {
+  font-family: Quicksand;
+  src:
+    local("Quicksand Regular"),
+    local("Quicksand-Regular"),
+    url("/dist/assets/fonts/Quicksand.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Quicksand;
+  src:
+    local("Quicksand Bold"),
+    local("Quicksand-Bold"),
+    url("/dist/assets/fonts/Quicksand-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+*/
+
+hr {
+  height: 1px;
+  margin: $p-size 0;
+  border: none;
+  background-image:
+    linear-gradient(
+      to left,
+      rgba($swatch-red, 0),
+      rgba($grey, 0.75),
+      rgba($grey, 0)
+    );
+}
+
+p {
+  display: block;
+  max-width: $p-max-width;
+  margin: 0 auto;
+  padding: 0 $p-size calc($p-line-height * 0.5) $p-size;
+  color: $p-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {  
+  font-family: $h-font;
+  font-weight: $h-weight;
+  display: block;
+  clear: both;
+  margin: $p-size auto $p-xxs;
+  padding: $p-small $p-small 0 $p-size;
+
+  color: $h-color;
+}
+
+h1 {
+  margin: 0;
+  padding: $p-large 1em 0.8em;
+  text-align: center;
+  color: $h-color;
+  border: none;
+  font-size: $h-size;
+  line-height: calc($h-size * 1.1);
+}
+
+h2 {
+  color: $h-color;
+  font-size: calc($h-size * 0.8);
+  line-height: calc($h-size * 1.1);
+}
+
+h3 {
+  color: $h-color;
+  font-size: calc($h-size * 0.6);
+}
+
+small {
+}
+
+sub,
+sup {
+}
+
+sup {
+}
+
+sub {
+}
+
+blockquote,
+q {
+
+  &::before {
+    content: "\201C";
+  }
+
+  &::after {
+    content: "\201D";
+  }
+}
+
+q {
+}
+
+blockquote {
+}
+
+caption {
+}
+
+code {
+}
+
+pre {
+}
+
+abbr,
+acronym {
+}

@@ -1,10 +1,9 @@
 /**
-* @file
+* @file breakpoints/_narrow.scss
 * Narrow/tablet media breakpoint tweaks.
 */
 
 @include mediaquery($mediaquery-narrow) {
-  /* /// */
   p {
   }
 
@@ -34,8 +33,6 @@
   h6 {
   }
 
-  /* //// */
-
   #main-menu {
     ul.menu {
     }
@@ -54,13 +51,11 @@
 
   #header {
   }
-
-  #app {
-  }
-
-  #content-wrap {
-  }
-
+  
   #content {
   }
+
+  #footer {
+  }
 }
+

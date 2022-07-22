@@ -1,52 +1,29 @@
 {
+  "swatch": {
+    "white":{"value": "#fefefe"},
+    "black": {"value":"#101010"},
+    "grey": {"value":"#abaaa6"},
+    "red": {"value":"#8c0d00"},
+    "green": {"value":"#61d43f"},
+    "blue": {"value":"#00598e"},
+    "cyan": {"value":"#29b4de"},
+    "magenta": {"value":"#dd2a99"},
+    "yellow": {"value":"#ec2"},
+    "orange": {"value":"#ff6200"},
+    "purple": {"value":"#bc00ff"},
+    "cream": {"value":"#fffbf0"},
+    "sand": {"value":"#eedeb8"},
+    "sage": {"value":"#86b082"}
+},
   "color": {
-    "primary": {
-      "value": "{swatch.black}",
-      "category": "color"
-    },
-    "primary-bg": {
-      "value": "{swatch.white}",
-      "category": "color"
-    },
-    "secondary": {
-      "value": "{swatch.white}",
-      "category": "color"
-    },
-    "secondary-bg": {
-      "value": "{swatch.dark-grey}",
-      "category": "color"
-    },
-    "tertiary": {
-      "value": "{swatch.dark-grey}",
-      "category": "color"
-    },
-    "tertiary-bg": {
-      "value": "{swatch.cream}",
-      "category": "color"
-    },
-    "hilight": {
-      "value": "{swatch.cyan}",
-      "category": "color"
-    },
-    "shadow": {
-      "value": "{swatch.dark-grey}",
-      "category": "color"
-    },
-    "neutral": {
-      "value": "{swatch.grey}",
-      "category": "color"
-    },
-    "error": {
-      "value": "{swatch.red}",
-      "category": "color"
-    },
-    "warning": {
-      "value": "{swatch.yellow}",
-      "category": "color"
-    },
-    "success": {
-      "value": "{swatch.green}",
-      "category": "color"
-    }    
+    "primary": {"value": "{swatch.black}"},
+    "secondary": {"value": "{swatch.white}"},
+    "tertiary": {"value": "{swatch.grey}"},
+    "hilight": {"value": "{swatch.cyan}"},
+    "shadow": {"value": "{swatch.grey}"},
+    "neutral": {"value": "{swatch.grey}"},
+    "error": {"value": "{swatch.red}"},
+    "warning": {"value": "{swatch.yellow}"},
+    "success": {"value": "{swatch.green}"}    
   }
 }

@@ -1,13 +1,13 @@
 /**
-* @file
+* @file src\sass\pages\___index.scss
 * Page style index.
-*
 * Styling for specific page types
+*
+* Comment out any components that will not be used,
+* for best performance/smallest file size.
 */
 
 @import "frontpage";
 
-/*
-@import "parallax";
-@import "parallax_grouped";
- */
+//@import "parallax";
+//@import "parallax_grouped";

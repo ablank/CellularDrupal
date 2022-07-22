@@ -1,9 +1,12 @@
 /**
-* @file
-* Breakpoint style index.
+* @file 
+* Breakpoints index.
+* 
+* Comment out any components that will not be used,
+* for best performance/smallest file size.
 */
 
-@import "default";
+@import "scrolled";
 @import "small";
 @import "narrow";
 @import "large";

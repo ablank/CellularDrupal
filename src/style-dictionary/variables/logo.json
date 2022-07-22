@@ -1,28 +1,12 @@
 {
   "logo": {
-    "unit": {
-      "value": "px"
-    },
-    "width": {
-      "value": "96{logo.unit.value}"
-    },
-    "height": {
-      "value": "96{logo.unit.value}"
-    },
-    "margin": {
-      "value": "0{logo.unit.value}"
-    },
-    "padding": {
-      "value": "0{logo.unit.value}"
-    },
-    "border-size": {
-      "value": "1{logo.unit.value}"
-    },
-    "png": {
-      "value": "'{path.image}/logo.png'"
-    },
-    "svg": {
-      "value": "'{path.image}/logo.svg'"
-    }
+    "unit": "px",
+    "width": {"value": "96{logo.unit}"},
+    "height": {"value": "96{logo.unit}"},
+    "margin": {"value": "0{logo.unit}"},
+    "padding": {"value": "0{logo.unit}"},
+    "border-size": {"value": "1{logo.unit}"},
+    "image-png": {"value": "'{path.assets}/logo.png'"},
+    "image": {"value": "'{path.assets}/logo.svg'"}
   }
 }

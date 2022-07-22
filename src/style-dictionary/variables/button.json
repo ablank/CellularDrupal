@@ -1,0 +1,23 @@
+{
+  "button": {
+    "border": {
+      "size": {
+        "value": "1px"
+      },
+      "radius": {
+        "value": "{xs.value}{default.unit}"
+      }
+    },
+    "font": {
+      "size": {
+        "value": "{default.font.size.value}"
+      },
+      "family":{
+        "value": "{h.font.value}"
+      },
+      "weight":{
+        "value": "bold"
+      }
+    }
+  }
+}
